@@ -282,6 +282,7 @@ table.t td.num{text-align:center;font-variant-numeric:tabular-nums;font-weight:9
 .totals span{font-size:13px;font-weight:800;color:var(--muted)}
 .refs{direction:ltr;text-align:left;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:1.75;padding-left:2em;text-indent:-2em;list-style:none;margin:0;padding-inline-start:0}
 .refs li{padding-left:2em;text-indent:-2em;margin-bottom:6px;font-weight:400;max-width:none}
+.intro{font-size:15px;line-height:1.95;font-weight:600;color:var(--muted);max-width:72ch;margin:0}
 .limit{background:var(--warn-bg);border:1px solid var(--sel-line);border-radius:12px;padding:10px 14px}
 </style>
 
@@ -291,7 +292,7 @@ table.t td.num{text-align:center;font-variant-numeric:tabular-nums;font-weight:9
 <button class="tab" data-v="home">الرئيسية</button>
 <button class="tab" data-v="good">✅ التصميم الجيد</button>
 <button class="tab" data-v="bad">❌ التصميم السيئ</button>
-<button class="tab" data-v="study">⚖️ الدراسة المقارنة</button>
+<button class="tab" data-v="study">⚖️ المقارنة بين التصميمين</button>
 </nav>
 <div class="flag" aria-hidden="true"></div>
 <main>
@@ -332,7 +333,7 @@ table.t td.num{text-align:center;font-variant-numeric:tabular-nums;font-weight:9
 <div class="cards">
 <button class="card good" data-go="good"><span class="k">جرّبه مع الصف</span><h3>التصميم الجيد</h3><span class="d">تجربة محاكاة، تصنيف، توصيل، ترتيب، تسمية مخطط، إكمال فراغ وغيرها، مع تلميح ومحاولة ثانية وتقرير للمعلّمة.</span></button>
 <button class="card bad" data-go="bad"><span class="k">للنقد فقط</span><h3>التصميم السيئ</h3><span class="d">المحتوى العلمي نفسه، لكن بأزرار وهمية وألوان تدور ومؤقت مقلق، وتغذية راجعة محبِطة («لقد أخطأت! لقد فشلت»).</span></button>
-<button class="card cmp" data-go="study"><span class="k">٢١ معياراً • ٦ مجالات</span><h3>الدراسة المقارنة</h3><span class="d">تحليل أكاديمي موثّق بالمراجع: سلّم تقدير كمّي، تصنيف بلوم، الحِمل المعرفي، ونتائج وتوصيات.</span></button>
+<button class="card cmp" data-go="study"><span class="k">٢١ معياراً • ٦ مجالات</span><h3>المقارنة بين التصميمين</h3><span class="d">مقارنة تفصيلية لكل معيار: ما يفعله التصميم الجيد، وما يفعله السيئ، وأثر ذلك في التعلّم، مع المرجع العلمي.</span></button>
 </div>
 <p class="note">النسخة السيئة عمداً مخصّصة للنقد التربوي، ولا تُعرض على الطلاب نشاطاً فعلياً.</p>
 </div>
@@ -369,132 +370,15 @@ table.t td.num{text-align:center;font-variant-numeric:tabular-nums;font-weight:9
 <article class="paper">
 <div class="tz" aria-hidden="true"></div>
 <div class="paper-in">
-<span class="eyebrow">دراسة تحليلية مقارنة</span>
-<h2>التصميم الجيد والتصميم السيئ لنشاط «رحلة قطّورة»</h2>
-<p class="sub">تحليل قائم على المعايير لنسختين من نشاط تفاعلي في دورة المياه • الصف الرابع الأساسي<br>إعداد: مها السيلاوي • إشراف: د. مجدي عقل</p>
-<div class="abstract"><p><b>الملخّص.</b> تقارن هذه الدراسة بين نسختين من نشاط تفاعلي واحد في وحدة دورة المياه، تشتركان في المفاهيم العلمية العشرة نفسها وتختلفان في قرارات التصميم وحدها. حُلّلت النسختان وفق ٢١ معياراً موزّعة على ستة مجالات مستمدّة من نظرية الحِمل المعرفي، ومبادئ التعلّم بالوسائط المتعددة، ونماذج التغذية الراجعة، ونموذج ARCS للدافعية، وإرشادات WCAG 2.2، ومبادئ نيلسن لقابلية الاستخدام. حصل التصميم الجيد على <b id="absG"></b> من الدرجة الكلية، والتصميم السيئ على <b id="absB"></b>. وتظهر أكبر الفجوات في التغذية الراجعة والحِمل الدخيل وتنوّع مستويات التفكير.</p></div>
-<p class="kw"><b>كلمات مفتاحية:</b> التصميم التعليمي، الأنشطة التفاعلية، الحِمل المعرفي، التغذية الراجعة، دورة المياه، التراث الفلسطيني.</p>
-<nav class="toc" aria-label="محتويات الدراسة">
-<button data-sec="s1">١. المنهجية</button><button data-sec="s2">٢. وصف النشاط</button><button data-sec="s3">٣. المقارنة التفصيلية</button><button data-sec="s4">٤. التقدير الكمّي</button><button data-sec="s5">٥. تصنيف بلوم</button><button data-sec="s6">٦. الحِمل المعرفي</button><button data-sec="s7">٧. النتائج والتوصيات</button><button data-sec="s8">المراجع</button>
-</nav>
-
-<section class="sec" id="s1">
-<h3><span class="no">١</span>المنهجية وإطار التحليل</h3>
-<p>اتُّبع <b>التحليل المقارن القائم على المعايير</b>. ولعزل أثر التصميم ضُبط المحتوى العلمي: النسختان تغطيان المفاهيم نفسها (مصدر الطاقة، التبخّر، التكاثف، الهطول، التجمّع والمياه الجوفية، حالات الماء، النتح، ترتيب المراحل، الزراعة البعلية، ترشيد الماء)، لذلك لم تُحسب دقّة المحتوى ضمن الدرجات. اشتُقّت المعايير من ستة أُطر نظرية، وقُدّر كل معيار على سلّم من أربع درجات:</p>
-<div class="tblwrap"><table class="t"><thead><tr><th>الدرجة</th><th>الوصف</th></tr></thead><tbody>
-<tr><td class="num">٤</td><td>المعيار متحقّق بالكامل، وتوجد أدلّة واضحة عليه في الواجهة.</td></tr>
-<tr><td class="num">٣</td><td>المعيار متحقّق مع ملاحظات أو حدود قابلة للتحسين.</td></tr>
-<tr><td class="num">٢</td><td>المعيار متحقّق جزئياً، وفيه خلل يؤثّر في التعلّم.</td></tr>
-<tr><td class="num">١</td><td>المعيار غير متحقّق، أو يتعارض التصميم معه.</td></tr>
-</tbody></table></div>
-<div class="tblwrap"><table class="t"><thead><tr><th>الإطار النظري</th><th>ما يقيسه في هذه الدراسة</th></tr></thead><tbody>
-<tr><td>نظرية الحِمل المعرفي (Sweller, 1988)</td><td>هل تُستهلك الذاكرة العاملة في التعلّم أم في عناصر دخيلة؟</td></tr>
-<tr><td>مبادئ التعلّم بالوسائط المتعددة (Mayer, 2021)</td><td>التجزئة، الاتساق (حذف المشتّتات)، الإشارة البصرية، التدريب المسبق، الوسيلة (صورة مع سرد صوتي).</td></tr>
-<tr><td>نموذج التغذية الراجعة (Hattie &amp; Timperley, 2007; Shute, 2008)</td><td>فورية التغذية الراجعة ومستواها وما تقوله عن الخطوة التالية.</td></tr>
-<tr><td>نموذج ARCS (Keller, 2010) ونظرية تقرير المصير (Ryan &amp; Deci, 2000)</td><td>الانتباه، الصلة، الثقة، الرضا، والحاجة إلى الكفاءة والانتماء.</td></tr>
-<tr><td>تصنيف بلوم المعدّل (Anderson &amp; Krathwohl, 2001)</td><td>مستويات التفكير التي تستدعيها الأنشطة.</td></tr>
-<tr><td>WCAG 2.2 (W3C, 2023) ومبادئ نيلسن (Nielsen, 1994)</td><td>التباين، الحركة، حجم أهداف اللمس، التحكّم في الوقت، ووضوح حالة النظام.</td></tr>
-</tbody></table></div>
-</section>
-
-<section class="sec" id="s2">
-<h3><span class="no">٢</span>وصف النشاط ونواتج التعلّم</h3>
-<p>يُقدَّم النشاط على السبورة التفاعلية أو جهاز العرض، ويعمل الصف فريقاً واحداً تقوده المعلّمة. يُتوقّع من الطالب في نهايته أن:</p>
-<ol>
-<li>يحدّد الشمس مصدراً للطاقة المحرّكة لدورة المياه.</li>
-<li>يرتّب مراحل الدورة الأربع (تبخّر، تكاثف، هطول، تجمّع) ويسمّيها على مخطط.</li>
-<li>يفسّر ظواهر يومية (جفاف الغسيل، الندى، قطرات الزجاجة الباردة) بمفهومي التبخّر والتكاثف.</li>
-<li>يصنّف أمثلة من البيئة الفلسطينية حسب حالة الماء.</li>
-<li>يستنتج أثر الحرارة والرياح في سرعة التبخّر من تجربة محاكاة.</li>
-<li>يقيّم سلوكيات يومية من حيث المحافظة على الماء، ويربط ذلك بالتبخّر.</li>
-</ol>
-<p>في التصميم الجيد يعمل كل نشاط وفق دورة ثابتة: سياق قصصي ثم مهمّة ثم تحقّق. إذا أصاب الفريق من المحاولة الأولى نال 🫒 و🏠، وإذا أخطأ ظهر تلميح ومحاولة ثانية، فإن أصاب نال 🏠، وإن أخطأ ثانية عُرض الحلّ مع تفسيره وبقيت ⛺. تأتي بعد كل نشاط معلومة إثرائية من البيئة الفلسطينية.</p>
-</section>
-
+<span class="eyebrow">مقارنة تفصيلية حسب المعايير</span>
+<h2>الفرق بين التصميم الجيد والتصميم السيئ</h2>
+<p class="sub">نشاط «رحلة قطّورة» • دورة المياه في الطبيعة • الصف الرابع الأساسي<br>إعداد: مها السيلاوي • إشراف: د. مجدي عقل</p>
+<p class="intro">تتناول المقارنة ٢١ معياراً موزّعة على ستة مجالات. لكل معيار: ما يفعله التصميم الجيد، وما يفعله التصميم السيئ، وأثر ذلك في تعلّم الطالب، مع المرجع العلمي الذي يستند إليه.</p>
 <section class="sec" id="s3">
-<h3><span class="no">٣</span>المقارنة التفصيلية حسب المعايير</h3>
 <div class="legend"><i class="g">✅ التصميم الجيد</i><i class="b">❌ التصميم السيئ</i></div>
 <div id="critList"></div>
 </section>
 
-<section class="sec" id="s4">
-<h3><span class="no">٤</span>التقدير الكمّي</h3>
-<div class="totals" id="totals"></div>
-<p class="cap">شكل ١: متوسط الدرجة في كل مجال (من ٤)</p>
-<div class="legend"><i class="g">التصميم الجيد</i><i class="b">التصميم السيئ</i></div>
-<div class="bars" id="bars"></div>
-<div class="axis" aria-hidden="true"><span></span><div><span>٠</span><span>١</span><span>٢</span><span>٣</span><span>٤</span></div></div>
-<div class="tblwrap"><table class="t" id="scoreTbl"></table></div>
-<p class="cap">جدول ٣: الدرجات التفصيلية للمعايير الواحد والعشرين</p>
-</section>
-
-<section class="sec" id="s5">
-<h3><span class="no">٥</span>تحليل مستويات التفكير (تصنيف بلوم المعدّل)</h3>
-<p>يعتمد التصميم السيئ على نمط واحد هو الاختيار من متعدد بصياغة مختصرة منزوعة السياق، فتتركّز أسئلته في التذكّر. أما التصميم الجيد فيوزّع المفاهيم نفسها على تسعة أنماط تفاعل تستدعي مستويات أعلى، ويضيف بطاقة خروج كتابية غير محسوبة في الدرجة تستدعي مستوى الإنشاء.</p>
-<div class="tblwrap"><table class="t" id="bloomTbl"></table></div>
-<p class="cap">جدول ٤: أنشطة التصميم الجيد ومستوياتها المعرفية</p>
-<div class="tblwrap"><table class="t" id="bloomDist"></table></div>
-<p class="cap">جدول ٥: توزيع البنود على مستويات بلوم في التصميمين</p>
-</section>
-
-<section class="sec" id="s6">
-<h3><span class="no">٦</span>تحليل الحِمل المعرفي</h3>
-<p>تميّز نظرية الحِمل المعرفي بين ثلاثة أنواع من الحِمل على الذاكرة العاملة. الهدف في التصميم أن يقلّ الحِمل الدخيل وأن يُوجَّه الجهد إلى الحِمل البنّاء.</p>
-<div class="tblwrap"><table class="t"><thead><tr><th>نوع الحِمل</th><th>التصميم الجيد</th><th>التصميم السيئ</th></tr></thead><tbody>
-<tr><td><b>الجوهري</b><br>(تعقيد المفهوم نفسه)</td><td>متساوٍ في التصميمين لأن المحتوى مضبوط، لكنه يُقسَّم إلى نشاط واحد في كل شاشة.</td><td>متساوٍ في المحتوى، لكنه يُعرض دفعة واحدة: عشرة أسئلة في صفحة واحدة.</td></tr>
-<tr><td><b>الدخيل</b><br>(ما لا يخدم التعلّم)</td><td>منخفض: لا خلفية متحرّكة، وكل زر له وظيفة، والصوت يحمل معنى ويمكن كتمه. والفيديو لا يعمل تلقائياً، ويُعرض في مقاطع قصيرة.</td><td>مرتفع: <span id="nShapes"></span> شكلاً ورمزاً ملوّناً خلف النص (نصفها يدور)، و<span id="nFake"></span> زراً بلا وظيفة، ومؤقّت، وأرقام عشوائية، وخطوط مختلطة.</td></tr>
-<tr><td><b>البنّاء</b><br>(بناء المخطّطات الذهنية)</td><td>مرتفع: المخطط يربط كل نشاط بمرحلته، والتجربة تبني علاقة سبب ونتيجة، والمعلومة الإثرائية تربط المفهوم بالبيئة.</td><td>منخفض: لا تفسير ولا ربط، فلا يجد الطالب ما يبني عليه.</td></tr>
-</tbody></table></div>
-</section>
-
-<section class="sec" id="s7">
-<h3><span class="no">٧</span>النتائج والتوصيات</h3>
-<p><b>النتائج.</b></p>
-<ol>
-<li>يعمل الفيديو والمخطط في التصميم الجيد معاً: الفيديو يمهّد للمفهوم ويُستدعى عند الخطأ، والمخطط الثابت يبقى مرجعاً أثناء الحلّ. ولم يُستبدل أحدهما بالآخر لأن لكلٍّ منهما وظيفة مختلفة.</li>
-<li>يتفوّق التصميم الجيد في المجالات الستة كلها، وأكبر الفجوات في <b>التغذية الراجعة والتقويم</b> وفي <b>الحِمل المعرفي</b>. الفرق إذن ليس جمالياً، بل يمسّ آليات التعلّم نفسها.</li>
-<li>تنوّع أنماط التفاعل يرفع مستوى التفكير دون تغيير المحتوى، فالمفاهيم العشرة نفسها انتقلت من التذكّر إلى الفهم والتطبيق والتحليل والتقويم.</li>
-<li>المكافأة في التصميم الجيد تمثّل التعلّم نفسه (🏠 للحلّ، 🫒 للإتقان)، فتصبح أداة تقويم تكويني بيد المعلّمة. أما مكافآت التصميم السيئ العشوائية فتفصل النتيجة عن الجهد.</li>
-<li>العمل بفريق واحد يحوّل المنافسة بين الزملاء إلى هدف جماعي (بناء القرية وقطف الزيتون)، وهذا أنسب لطلاب الصف الرابع ويقلّل قلق الطلاب الأضعف.</li>
-<li>بعض أخطاء التصميم السيئ ليست تربوية فحسب بل تمسّ كرامة المتعلّم وإمكانية الوصول، مثل عبارتي «لقد فشلت» و«أنت طالب سيء» ونسبة تباين ١٫٤:١ في العنوان.</li>
-<li>وجود تغذية راجعة فورية لا يكفي وحده: التصميم السيئ يقدّم حكماً فورياً بالصواب أو الخطأ، لكنه لا يشرح ولا يوجّه ويصِم الطالب عند الخطأ. فالفرق الحاسم في <b>نوع</b> التغذية الراجعة ومستواها، لا في توقيتها فقط.</li>
-</ol>
-<p><b>حدود الدراسة.</b></p>
-<div class="limit"><ul>
-<li>التقدير أجرته جهة التصميم نفسها، ويُستحسن عرض سلّم التقدير على محكّمين مستقلّين وحساب نسبة الاتفاق بينهم.</li>
-<li>لم يُجرَّب النشاط ميدانياً بعد. يُقترح تطبيق اختبار قبلي وبعدي على شعبتين، تستخدم إحداهما كل نسخة، لقياس الأثر في التحصيل.</li>
-<li>لا يحفظ التصميم الجيد تقرير الأداء بعد إغلاق الصفحة، وترتيب الأنشطة ثابت لا يتكيّف مع مستوى الصف.</li>
-</ul></div>
-<p><b>توصيات لتطوير التصميم الجيد.</b></p>
-<ol>
-<li>إضافة قراءة صوتية للأسئلة دعماً للطلاب ذوي صعوبات القراءة، وفق مبدأ تعدّد وسائل التمثيل (CAST, 2018).</li>
-<li>إضافة مسار تكيّفي يعيد عرض المرحلة التي ظهرت فيها ⛺ بنشاط بديل في نهاية التحدّي.</li>
-<li>حفظ التقرير وبطاقات الخروج لتتابع المعلّمة تقدّم الصف عبر الحصص.</li>
-<li>السماح للطلاب باختيار ترتيب الأنشطة ضمن كل مرحلة، دعماً للاستقلالية (Ryan &amp; Deci, 2000).</li>
-</ol>
-</section>
-
-<section class="sec" id="s8">
-<h3><span class="no">◆</span>المراجع</h3>
-<ul class="refs" lang="en">
-<li>Anderson, L. W., &amp; Krathwohl, D. R. (Eds.). (2001). <i>A taxonomy for learning, teaching, and assessing: A revision of Bloom's taxonomy of educational objectives</i>. Longman.</li>
-<li>Black, P., &amp; Wiliam, D. (1998). Assessment and classroom learning. <i>Assessment in Education: Principles, Policy &amp; Practice, 5</i>(1), 7–74.</li>
-<li>CAST. (2018). <i>Universal Design for Learning guidelines version 2.2</i>. http://udlguidelines.cast.org</li>
-<li>de Jong, T., &amp; van Joolingen, W. R. (1998). Scientific discovery learning with computer simulations of conceptual domains. <i>Review of Educational Research, 68</i>(2), 179–201.</li>
-<li>Dweck, C. S. (2006). <i>Mindset: The new psychology of success</i>. Random House.</li>
-<li>Gagné, R. M., Wager, W. W., Golas, K. C., &amp; Keller, J. M. (2005). <i>Principles of instructional design</i> (5th ed.). Wadsworth.</li>
-<li>Hattie, J., &amp; Timperley, H. (2007). The power of feedback. <i>Review of Educational Research, 77</i>(1), 81–112.</li>
-<li>Keller, J. M. (2010). <i>Motivational design for learning and performance: The ARCS model approach</i>. Springer.</li>
-<li>Malone, T. W. (1981). Toward a theory of intrinsically motivating instruction. <i>Cognitive Science, 5</i>(4), 333–369.</li>
-<li>Mayer, R. E. (2021). <i>Multimedia learning</i> (3rd ed.). Cambridge University Press.</li>
-<li>Nielsen, J. (1994). Enhancing the explanatory power of usability heuristics. In <i>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</i> (pp. 152–158). ACM.</li>
-<li>Ryan, R. M., &amp; Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. <i>American Psychologist, 55</i>(1), 68–78.</li>
-<li>Shute, V. J. (2008). Focus on formative feedback. <i>Review of Educational Research, 78</i>(1), 153–189.</li>
-<li>Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. <i>Cognitive Science, 12</i>(2), 257–285.</li>
-<li>W3C. (2023). <i>Web Content Accessibility Guidelines (WCAG) 2.2</i>. https://www.w3.org/TR/WCAG22/</li>
-<li>Wood, D., Bruner, J. S., &amp; Ross, G. (1976). The role of tutoring in problem solving. <i>Journal of Child Psychology and Psychiatry, 17</i>(2), 89–100.</li>
-</ul>
-</section>
 </div>
 <div class="tz" aria-hidden="true"></div>
 </article>
@@ -1048,7 +932,7 @@ const CRIT=[
 [0,'التعلّم بالاستقصاء والتجريب','de Jong & van Joolingen, 1998',
  'محاكاة لتجفيف الغسيل يغيّر فيها الطلاب حرارة الشمس والرياح، ويُسجَّل كل تجربة في جدول. ولا تُفتح الإجابة إلا بعد تجربتين بظروف مختلفة، فيُبنى الاستنتاج على الملاحظة.',
  'لا تجريب ولا ملاحظة. المعرفة تُقدَّم أسئلة جاهزة للحفظ.',
- 'ضبط المتغيّرات وملاحظة أثرها يبني مهارات التفكير العلمي، والجدول يدعم الاستقصاء فلا يصبح عشوائياً. لكن المحاكاة لا تُلزم الطالب بتغيير متغيّر واحد في كل مرة، ولهذا الدرجة ٣.',3,1],
+ 'ضبط المتغيّرات وملاحظة أثرها يبني مهارات التفكير العلمي، والجدول يدعم الاستقصاء فلا يصبح عشوائياً.',3,1],
 [1,'مبدأ التجزئة','Mayer, 2021',
  'نشاط واحد في كل شاشة، مع شريط تقدّم من عشر خانات ملوّنة حسب النتيجة، والانتقال بيد الفريق عبر زر «النشاط التالي».',
  'الأسئلة العشرة وبطاقة الكتابة في صفحة طويلة واحدة، بلا مؤشر تقدّم.',
@@ -1068,7 +952,7 @@ const CRIT=[
 [2,'فورية التغذية الراجعة','Shute, 2008',
  'تظهر النتيجة فور الإجابة: الصحيح بالأخضر مع ✔ والخطأ بالأحمر مع ✘، ولكلٍّ منهما نغمة مختلفة.',
  'تظهر عبارة فورية تحت السؤال: «أجبت بشكل صحيح» بأخضر باهت ضعيف التباين، أو «لقد أخطأت! لقد فشلت ❌» بأحمر كبير. النغمة واحدة في الحالتين، ويمكن تغيير الإجابة بعد معرفة الحكم، فتتحوّل التغذية الراجعة إلى تخمين متكرّر حتى يظهر «صحيح».',
- 'التغذية الراجعة الفورية تمنع ترسيخ الفهم الخاطئ، وهي الأنسب للمتعلّمين الصغار. لكن الفورية وحدها لا تكفي: إذا اقتصرت على حكم «صح/خطأ» وسمحت بالتبديل الحرّ، شجّعت التخمين بدل التفكير. لذلك نال التصميم السيئ ٢ في هذا المعيار.',4,2],
+ 'التغذية الراجعة الفورية تمنع ترسيخ الفهم الخاطئ، وهي الأنسب للمتعلّمين الصغار. لكن الفورية وحدها لا تكفي: إذا اقتصرت على حكم «صح/خطأ» وسمحت بالتبديل الحرّ، شجّعت التخمين بدل التفكير.',4,2],
 [2,'التغذية الراجعة التفصيلية','Hattie & Timperley, 2007',
  'الرسالة تحدّد ما أصاب الطالب فيه وما أخطأ (مثل «في مكانها الصحيح ٢ من ٤») وتعلّم العنصر الخاطئ. والمعلومة الإثرائية تشرح السبب، وشريط التقدّم يجيب عن سؤال «إلى أين أنا ذاهب؟».',
  'تغذية راجعة من مستوى «التحقّق» فقط: «أجبت بشكل صحيح» أو «لقد أخطأت»، دون بيان الإجابة الصحيحة أو سبب الخطأ. وعبارة «لقد فشلت» تنقل الحكم من المهمّة إلى الذات، وهو المستوى الذي يصفه هاتي وتيمبرلي بأنه الأضعف أثراً. وفي النهاية علامة رقمية مثل «٦٠ / ١٠٠» بلا تفصيل.',
@@ -1080,7 +964,7 @@ const CRIT=[
 [2,'التقويم التكويني ودعم قرار المعلّمة','Black & Wiliam, 1998',
  'يميّز النشاط بين الإتقان من المحاولة الأولى (🫒) والنجاح بعد تلميح (🏠) والحاجة إلى مراجعة (⛺)، ويعرض في النهاية تقريراً لكل نشاط ومرحلة، ثم بطاقة خروج كتابية.',
  'لا شيء يدلّ المعلّمة على المواضع التي يحتاج فيها الصف إلى مراجعة، والأرقام العشوائية تضلّلها.',
- 'المعلومة التكوينية تمكّن المعلّمة من تعديل تدريسها في الحصّة نفسها. لكن التقرير لا يُحفظ بعد إغلاق الصفحة، ولهذا الدرجة ٣.',3,1],
+ 'المعلومة التكوينية تمكّن المعلّمة من تعديل تدريسها في الحصّة نفسها.',3,1],
 [3,'الانتباه والصلة (ARCS)','Keller, 2010; Malone, 1981',
  'قصّة «قطّورة» وتحوّل الخيام إلى بيوت وقطف الزيتون على الكوفية تقدّم خيالاً مرتبطاً بالمحتوى والتراث، فالمكافأة جزء من قصة التعلّم.',
  'الإثارة مصطنعة: ألوان فاقعة وأصوات وأشكال تدور. هي تجذب الانتباه فعلاً، لكنها تجذبه بعيداً عن التعلّم.',
@@ -1092,7 +976,7 @@ const CRIT=[
 [3,'الكفاءة والانتماء والاستقلالية','Ryan & Deci, 2000',
  'فريق واحد يمثّل الصف كله وهدف مشترك (بناء القرية)، فلا منافسة بين الزملاء. التقدّم المرئي يعزّز الشعور بالكفاءة، والطلاب يختارون اسم فريقهم.',
  'نشاط فردي مع «ترتيبك: ٧٣٤ من ٩٩٩»، وهو رقم وهمي يولّد مقارنة اجتماعية بلا أساس.',
- 'العمل نحو هدف جماعي يخفّف قلق الفشل لدى الطلاب الأضعف ويزيد التعاون. لكن ترتيب الأنشطة ثابت ولا يتيح خياراً للطلاب، ولهذا الدرجة ٣.',3,1],
+ 'العمل نحو هدف جماعي يخفّف قلق الفشل لدى الطلاب الأضعف ويزيد التعاون.',3,1],
 [3,'معنى المكافأة','Malone, 1981; Ryan & Deci, 2000',
  'المكافأة تمثيل مباشر للتعلّم: عدد البيوت يساوي الأنشطة المحلولة، وعدد الزيتونات يساوي الإتقان من المحاولة الأولى. وعند اكتمال القرية يرتفع العلم.',
  '«الزيتونات» و«المستوى» و«الترتيب» تُولَّد عشوائياً في كل مرة ولا علاقة لها بالأداء.',
@@ -1123,24 +1007,12 @@ const BAD_BLOOM={'تذكّر':6,'فهم':4};
 function buildStudy(){
  const fr=document.createElement('template');fr.innerHTML=$('#tpl-bad').innerHTML;
  const nFake=fr.content.querySelectorAll('.fake button').length+2, nShapes=40;
- $('#nShapes').textContent=toAr(nShapes);$('#nFake').textContent=toAr(nFake);
  let html='';
  DOMS.forEach((d,di)=>{const cs=CRIT.map((c,k)=>[c,k]).filter(([c])=>c[0]===di);
-  html+=`<div class="domain"><h4>${d}<small>${toAr(cs.length)} معايير</small></h4>`+cs.map(([c,k])=>`<div class="crit"><header><b>${toAr(k+1)}. ${c[1]}</b><span class="ref">${esc(c[2])}</span><span class="sc"><span class="sg">الجيد ${toAr(c[6])}/٤</span><span class="sb">السيئ ${toAr(c[7])}/٤</span></span></header>
+  html+=`<div class="domain"><h4>${d}<small>${toAr(cs.length)} معايير</small></h4>`+cs.map(([c,k])=>`<div class="crit"><header><b>${toAr(k+1)}. ${c[1]}</b><span class="ref">${esc(c[2])}</span></header>
   <div class="cols"><div class="g"><i>✅ التصميم الجيد</i>${c[3]}</div><div class="b"><i>❌ التصميم السيئ</i>${c[4].replace('NSHAPES',toAr(nShapes)).replace('NFAKE',toAr(nFake))}</div></div>
   <div class="imp"><b>الأثر في التعلّم:</b> ${c[5]}</div></div>`).join('')+`</div>`;});
  $('#critList').innerHTML=html;
- const tg=CRIT.reduce((s,c)=>s+c[6],0),tb=CRIT.reduce((s,c)=>s+c[7],0),max=CRIT.length*4;
- const pct=v=>toAr(Math.round(v/max*100))+'٪';
- $('#absG').textContent=pct(tg);$('#absB').textContent=pct(tb);
- $('#totals').innerHTML=`<div class="g"><span>التصميم الجيد</span><b>${toAr(tg)} / ${toAr(max)}</b><span>${pct(tg)} من الدرجة الكلية</span></div><div class="b"><span>التصميم السيئ</span><b>${toAr(tb)} / ${toAr(max)}</b><span>${pct(tb)} من الدرجة الكلية</span></div><div><span>الفرق</span><b>${toAr(tg-tb)}</b><span>درجة لصالح التصميم الجيد</span></div>`;
- const f1=v=>toAr(v.toFixed(2).replace(/\.?0+$/,'')).replace('.','٫');
- $('#bars').innerHTML=DOMS.map((d,di)=>{const cs=CRIT.filter(c=>c[0]===di),g=cs.reduce((s,c)=>s+c[6],0)/cs.length,b=cs.reduce((s,c)=>s+c[7],0)/cs.length;
-  return `<div class="bar-row"><span class="lb">${d}</span><div class="track"><div class="bar bg_" style="width:${g/4*100}%">${f1(g)}</div><div class="bar bb_" style="width:${b/4*100}%">${f1(b)}</div></div></div>`;}).join('');
- $('#scoreTbl').innerHTML=`<thead><tr><th>#</th><th>المعيار</th><th>المجال</th><th>الجيد</th><th>السيئ</th></tr></thead><tbody>${CRIT.map((c,k)=>`<tr><td class="num">${toAr(k+1)}</td><td>${c[1]}</td><td>${DOMS[c[0]]}</td><td class="num">${toAr(c[6])}</td><td class="num">${toAr(c[7])}</td></tr>`).join('')}<tr><th colspan="3">المجموع</th><th class="num">${toAr(tg)}</th><th class="num">${toAr(tb)}</th></tr></tbody>`;
- $('#bloomTbl').innerHTML=`<thead><tr><th>#</th><th>النشاط</th><th>نمط التفاعل</th><th>المستوى المعرفي</th><th>الدليل</th></tr></thead><tbody>${ACTS.map((a,k)=>`<tr><td class="num">${toAr(k+1)}</td><td>${a.tag}</td><td>${TYPE[a.type]}</td><td><b>${a.bloom}</b></td><td>${BLOOM_WHY[k]}</td></tr>`).join('')}<tr><td class="num">+</td><td>✍️ بطاقة الخروج</td><td>كتابة حرّة (غير محسوبة)</td><td><b>إنشاء</b></td><td>يصوغ الطالب رحلة قطّورة بكلماته.</td></tr></tbody>`;
- const gd={};BLOOMS.forEach(b=>gd[b]=0);ACTS.forEach(a=>gd[a.bloom]++);gd['إنشاء']=1;
- $('#bloomDist').innerHTML=`<thead><tr><th>المستوى</th>${BLOOMS.map(b=>`<th>${b}</th>`).join('')}<th>عدد المستويات</th></tr></thead><tbody><tr><td><b>التصميم الجيد</b></td>${BLOOMS.map(b=>`<td class="num">${toAr(gd[b])}</td>`).join('')}<td class="num">${toAr(BLOOMS.filter(b=>gd[b]).length)}</td></tr><tr><td><b>التصميم السيئ</b></td>${BLOOMS.map(b=>`<td class="num">${toAr(BAD_BLOOM[b]||0)}</td>`).join('')}<td class="num">${toAr(Object.keys(BAD_BLOOM).length)}</td></tr></tbody>`;
 }
 const BLOOM_WHY=['استرجاع معلومة مباشرة.','يغيّر المتغيّرات ويقارن النتائج ليستنتج العلاقة.','يفسّر ظاهرة يومية بمفهوم التكاثف.','يميّز الفهم الصحيح من الفهم الخاطئ الشائع.','يسترجع أسماء المراحل ويضعها في مواضعها.','يصنّف أمثلة جديدة حسب خصائص كل حالة.','يكمل نصّاً تفسيرياً ويستبعد كلمات مشتّتة.','ينقل المفاهيم إلى سياق جديد (شجرة الزيتون) ويضيف النتح.','يعيد بناء تسلسل سببي للمراحل.','يحكم على سلوكيات ويربطها بالتبخّر.'];
 

@@ -70,6 +70,8 @@ main{flex:1;min-height:0;position:relative}
 .panel h3.t{font-family:var(--display);font-weight:400;font-size:24px;margin:0 0 8px;color:var(--water)}
 .vhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:8px}
 .vhead p{margin:0;font-size:13px;font-weight:700;color:var(--muted);line-height:1.7}
+.vbtns{display:flex;gap:6px;flex:none}
+.icon-btn[aria-pressed="true"]#narrBtn{border-color:var(--sel-line);background:var(--sel)}
 .icon-btn{flex:none;border:1px solid var(--line);background:var(--surface2);border-radius:12px;min-width:44px;height:44px;font-size:18px;cursor:pointer}
 .vscene{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line)}
 .slot .tent,.slot .house{transform-box:fill-box;transform-origin:50% 100%;transition:transform .55s cubic-bezier(.3,1.5,.5,1),opacity .35s}
@@ -343,10 +345,11 @@ table.t td.num{text-align:center;font-variant-numeric:tabular-nums;font-weight:9
 <div class="ggrid">
 <section class="panel" id="qpanel" aria-live="polite"></section>
 <aside class="panel village" aria-label="قرية الفريق">
-<div class="vhead"><div><h3 class="t" id="vname">قرية فريق الصف الرابع</h3><p>كل نشاط تحلّونه يُزيل خيمة ويبني بيتاً. وكل نشاط تحلّونه من المحاولة الأولى يُسقط حبة زيتون على الكوفية.</p></div><button class="icon-btn" id="mute" data-x="mute" aria-pressed="false" aria-label="كتم الصوت" title="كتم الصوت">🔊</button></div>
+<div class="vhead"><div><h3 class="t" id="vname">قرية فريق الصف الرابع</h3><p>كل نشاط تحلّونه يُزيل خيمة ويبني بيتاً. وكل نشاط تحلّونه من المحاولة الأولى يُسقط حبة زيتون على الكوفية.</p></div><div class="vbtns"><button class="icon-btn" id="narrBtn" data-x="narr" aria-pressed="false" aria-label="استمعوا إلى شرح القرية" title="استمعوا إلى شرح القرية">🔊</button><button class="icon-btn" id="mute" data-x="mute" aria-pressed="false" aria-label="كتم نغمات الإجابات" title="كتم نغمات الإجابات">🔔</button></div></div>
+<audio id="narr" src="media/village.mp3" preload="none"></audio>
 <svg class="vscene" id="vscene" viewBox="0 0 360 210" role="img" aria-label="القرية"></svg>
 <div class="tally"><span>🏠 بيوت <b><span id="nh">٠</span> / ١٠</b></span><span>🫒 زيتون على الكوفية <b><span id="no">٠</span> / ١٠</b></span></div>
-<ul class="key"><li>🫒 + 🏠 حلّ صحيح من المحاولة الأولى</li><li>🏠 حلّ صحيح بعد التلميح في المحاولة الثانية</li><li>⛺ تبقى الخيمة ويُعرض الحلّ للمراجعة</li></ul>
+<ul class="key"><li>🫒 + 🏠 حلّ صحيح من المحاولة الأولى</li><li>🏠 حلّ صحيح بعد التلميح في المحاولة الثانية</li><li>⛺ تبقى الخيمة ويُعرض الحلّ للمراجعة</li><li>🔊 شرح صوتي للقرية • 🔔 كتم نغمات الإجابات</li></ul>
 </aside>
 </div>
 <div class="vmodal" id="vmodal" hidden role="dialog" aria-modal="true" aria-labelledby="vmt"><div class="vwin"><header><b id="vmt">🎬 مقطع من الفيديو</b><button class="icon-btn" data-x="vclose" aria-label="إغلاق">✕</button></header><video id="clipVid" src="media/qatroura.mp4" preload="none" playsinline controls></video></div></div>
@@ -950,7 +953,7 @@ function act(x,i,v){
  switch(x){
   case 'start':{const iv=$('#introVid');if(iv)iv.pause();}G.team=($('#teamname').value||'').trim()||'فريق الصف الرابع';G.i=0;G.res=[];updateVillage();renderAct();P().scrollIntoView({block:'start',behavior:REDUCE?'auto':'smooth'});return;
   case 'restart':G.i=-1;G.res=[];updateVillage();renderIntro();return;
-  case 'mute':muted=!muted;$('#mute').textContent=muted?'🔇':'🔊';$('#mute').setAttribute('aria-pressed',muted);$('#mute').setAttribute('aria-label',muted?'تشغيل الصوت':'كتم الصوت');return;
+  case 'mute':muted=!muted;$('#mute').textContent=muted?'🔕':'🔔';$('#mute').setAttribute('aria-pressed',muted);$('#mute').setAttribute('aria-label',muted?'تشغيل نغمات الإجابات':'كتم نغمات الإجابات');return;
   case 'next':closeClip();G.i++;if(G.i>=ACTS.length)renderEnd();else renderAct();P().scrollIntoView({block:'start',behavior:REDUCE?'auto':'smooth'});return;
   case 'starter':{const t=$('#exitTxt');t.value=(t.value?t.value+' ':'')+v;t.focus();return;}
  }
@@ -978,12 +981,15 @@ function act(x,i,v){
  drawBody();
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeClip();});
+const narrSync=()=>{const on=!$('#narr').paused;$('#narrBtn').textContent=on?'⏸':'🔊';$('#narrBtn').setAttribute('aria-pressed',on);$('#narrBtn').setAttribute('aria-label',on?'إيقاف الشرح الصوتي':'استمعوا إلى شرح القرية');};
+['play','pause','ended'].forEach(ev=>$('#narr').addEventListener(ev,narrSync));
 $('#clipVid').addEventListener('timeupdate',e=>{if(clipEnd!==null&&e.target.currentTime>=clipEnd){e.target.pause();clipEnd=null;}});
 function newSKeep(a){const at=S.attempt;newS(a);S.attempt=at;}
 document.addEventListener('click',e=>{if(e.target.id==='vmodal'){closeClip();return;}const t=e.target.closest('[data-x]');if(!t||t.disabled)return;if(!t.closest('#v-good'))return;
  if(t.dataset.x==='seek'){const v=$('#introVid');if(v){try{v.currentTime=+t.dataset.t;}catch(_){}v.play().catch(()=>{});}return;}
  if(t.dataset.x==='clip'){openClip(+t.dataset.s,+t.dataset.e,t.dataset.n);return;}
- if(t.dataset.x==='vclose'){closeClip();return;}act(t.dataset.x,t.dataset.i!==undefined?+t.dataset.i:null,t.dataset.v);});
+ if(t.dataset.x==='vclose'){closeClip();return;}
+ if(t.dataset.x==='narr'){const a=$('#narr');if(a.paused){a.currentTime=0;a.play().catch(()=>{});}else a.pause();return;}act(t.dataset.x,t.dataset.i!==undefined?+t.dataset.i:null,t.dataset.v);});
 
 /* ---------- intro & end ---------- */
 function renderIntro(){
@@ -1103,7 +1109,7 @@ const CRIT=[
  'NFAKE زراً منها «التالي» و«حفظ» و«مساعدة» و«طباعة الشهادة» لا تفعل شيئاً، وبعضها مكرّر بأسماء متناقضة («التالي ◀» و«التالي ➡»).',
  'الأزرار الوهمية تهدم ثقة المستخدم بالواجهة، وتستهلك وقت الحصّة في التجريب العشوائي.',4,1],
 [5,'التحكّم في الوقت والتراجع','W3C, 2023 (SC 2.2.1); Nielsen, 1994 (H3)',
- 'لا مؤقت، فيتشاور الفريق بهدوء. ويمكن مسح الإجابة أو إرجاع أيّ بطاقة قبل التحقّق، ويوجد زرّ لكتم الصوت.',
+ 'لا مؤقت، فيتشاور الفريق بهدوء. ويمكن مسح الإجابة أو إرجاع أيّ بطاقة قبل التحقّق، ويوجد زرّ لكتم نغمات الإجابات، وزرّ يشغّل شرحاً صوتياً للقرية ويوقفه متى شاء المستخدم.',
  'مؤقت غير مشروح (٥ دقائق) يُنهي الاختبار فجأة ويحسب الأسئلة غير المُجابة خطأ، بلا إيقاف ولا تمديد.',
  'الضغط الزمني غير المبرّر يرفع القلق، ويجعل النشاط يقيس السرعة بدل الفهم.',4,1]
 ];
@@ -1138,7 +1144,7 @@ const VIEWS=['home','good','bad','study'];
 let badLoaded=false;
 function show(v){
  if(!VIEWS.includes(v))v='home';
- document.querySelectorAll('video').forEach(x=>x.pause());closeClip&&v!=='good'&&closeClip();
+ document.querySelectorAll('video,audio').forEach(x=>x.pause());closeClip&&v!=='good'&&closeClip();
  document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!=='v-'+v);
  document.querySelectorAll('.tab').forEach(e=>e.classList.toggle('on',e.dataset.v===v));
  if(v==='bad'&&!badLoaded){$('#f-bad').srcdoc='<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body>'+$('#tpl-bad').innerHTML+'</body></html>';badLoaded=true;}

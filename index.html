@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>تحدي الخيمة والزيتون</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Lalezar&display=swap">
+<style>
+/* Layout: black tab bar + flag ribbon; four hash views (home, good app, bad iframe, comparative study). Linen ground with faint keffiyeh net, tatreez bands mark section edges. */
+:root{--bg:#f6f1e6;--surface:#ffffff;--surface2:#fbf8f1;--ink:#1b1b1b;--muted:#5b5348;--line:#e4d9c3;--black:#141414;--red:#ce1126;--green:#007a3d;--btn:#007a3d;--btn-ink:#ffffff;--water:#0e5a7a;--water-l:#3a8fb7;--sky:#e3f1f7;--ground:#dccb9f;--sun:#f2b632;--net:rgba(20,20,20,.045);--band:#fbf7ee;--good:#007a3d;--good-bg:#e2f2e8;--bad:#c0111f;--bad-bg:#fbe8e9;--warn:#8a5200;--warn-bg:#fdf0d5;--sel:#fff1cc;--sel-line:#d99a1e;--cmp:#1b1b1b;--cmp-bg:#efe9dc;--display:'Lalezar','Cairo',Tahoma,sans-serif;--body:'Cairo',Tahoma,Arial,sans-serif;--tatreez:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M2.4,14.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M6.4,10.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M6.4,18.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M10.4,6.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M10.4,14.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23141414' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M10.4,22.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M14.4,2.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M14.4,10.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23141414' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M14.4,14.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23007a3d' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M14.4,18.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23141414' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M14.4,26.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M18.4,6.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M18.4,14.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23141414' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M18.4,22.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M22.4,10.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M22.4,18.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M26.4,14.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23ce1126' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M-1.6,-1.6l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23007a3d' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M30.4,-1.6l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23007a3d' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M-1.6,30.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23007a3d' stroke-width='1.3' stroke-linecap='round'/%3E%3Cpath d='M30.4,30.4l3.2,3.2m0,-3.2l-3.2,3.2' stroke='%23007a3d' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121110;--surface:#1d1b19;--surface2:#24211e;--ink:#f1ece2;--muted:#b7ad9c;--line:#3a342c;--red:#ff5a6a;--green:#3fbf7a;--btn:#13774a;--btn-ink:#ffffff;--water:#7cc4e4;--water-l:#4fa3c9;--sky:#1c2a31;--ground:#4a4234;--sun:#f2b632;--net:rgba(255,255,255,.04);--band:#efe6d2;--good:#4fd08a;--good-bg:#16301f;--bad:#ff7b86;--bad-bg:#3a1a1d;--warn:#f0b458;--warn-bg:#3a2a12;--sel:#3a3018;--sel-line:#e0a93a;--cmp:#f1ece2;--cmp-bg:#26231f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121110;--surface:#1d1b19;--surface2:#24211e;--ink:#f1ece2;--muted:#b7ad9c;--line:#3a342c;--red:#ff5a6a;--green:#3fbf7a;--btn:#13774a;--btn-ink:#ffffff;--water:#7cc4e4;--water-l:#4fa3c9;--sky:#1c2a31;--ground:#4a4234;--sun:#f2b632;--net:rgba(255,255,255,.04);--band:#efe6d2;--good:#4fd08a;--good-bg:#16301f;--bad:#ff7b86;--bad-bg:#3a1a1d;--warn:#f0b458;--warn-bg:#3a2a12;--sel:#3a3018;--sel-line:#e0a93a;--cmp:#f1ece2;--cmp-bg:#26231f;color-scheme:dark}
+html,body{height:100%;margin:0}
+[hidden]{display:none!important}
+*{box-sizing:border-box}
+body{background-color:var(--bg);background-image:repeating-linear-gradient(45deg,var(--net) 0 2px,transparent 2px 14px),repeating-linear-gradient(-45deg,var(--net) 0 2px,transparent 2px 14px);color:var(--ink);font-family:var(--body);display:flex;flex-direction:column}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--black)}
+button{font-family:inherit;color:inherit}
+button:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.app{display:flex;flex-direction:column;flex:1;min-height:0}
+.top{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));background:var(--black);color:#fff}
+.top h1{font-family:var(--display);font-weight:400;font-size:20px;margin:0 0 0 10px;white-space:nowrap}
+.flag{height:14px;flex:none;border-top:2px solid #2a2a2a;position:relative;background:linear-gradient(180deg,#141414 0 33.4%,#ffffff 33.4% 66.7%,#007a3d 66.7%)}
+.flag::before{content:"";position:absolute;top:0;bottom:0;right:0;width:40px;background:#ce1126;clip-path:polygon(100% 0,0 50%,100% 100%)}
+.tab{border:2px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);color:#fff;font:800 13px var(--body);padding:6px 13px;border-radius:12px;cursor:pointer}
+.tab:hover{background:rgba(255,255,255,.18)}
+.tab.on{background:#fff;color:#141414;border-color:#fff;box-shadow:inset 0 -3px 0 #ce1126}
+main{flex:1;min-height:0;position:relative}
+.view{position:absolute;inset:0;overflow:auto}
+.tz{height:32px;background-color:var(--band);background-image:var(--tatreez);background-repeat:repeat-x;background-position:center}
+.wrapx{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* ---------- home ---------- */
+.home{max-width:960px;margin:0 auto;padding-block:22px 34px;text-align:center}
+.hero{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;margin-bottom:18px;box-shadow:0 18px 34px -24px rgba(0,0,0,.45)}
+.hero-in{padding:18px 18px 20px}
+.scene-h{width:min(340px,100%);height:auto;display:block;margin:0 auto 6px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:900;color:var(--red);letter-spacing:.02em;margin-bottom:2px}
+.home h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,5.4vw,46px);margin:0;line-height:1.3;text-wrap:balance}
+.home h2 em{font-style:normal;color:var(--green)}
+.grade{font-size:15px;font-weight:800;color:var(--muted);margin:4px 0 12px}
+.by{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.by span{background:var(--bg);border:1px dashed var(--red);border-radius:999px;padding:5px 16px;font-size:14px;font-weight:700}
+.lead{font-size:15px;font-weight:600;color:var(--muted);max-width:660px;margin:0 auto;line-height:1.9}
+.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.facts li{font-size:13px;font-weight:800;background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:6px 12px}
+.facts b{color:var(--green);font-variant-numeric:tabular-nums}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;text-align:right}
+.card{background:var(--surface);border:1px solid var(--line);border-top:7px solid var(--c);border-radius:18px;padding:16px 18px 18px;cursor:pointer;font:inherit;color:var(--ink);text-align:right;display:flex;flex-direction:column;gap:6px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 24px -16px rgba(0,0,0,.5)}
+.card .k{font-size:12px;font-weight:900;padding:2px 10px;border-radius:99px;align-self:flex-start;background:var(--kb);color:var(--c)}
+.card h3{margin:0;font-size:20px;font-weight:900}
+.card span.d{font-size:14px;font-weight:600;color:var(--muted);line-height:1.75}
+.card.good{--c:var(--good);--kb:var(--good-bg)}
+.card.bad{--c:var(--bad);--kb:var(--bad-bg)}
+.card.cmp{--c:var(--cmp);--kb:var(--cmp-bg)}
+.note{font-size:12px;color:var(--muted);margin-top:18px}
+
+/* ---------- good design app ---------- */
+.game{max-width:1180px;margin:0 auto;padding-block:16px 28px}
+.ghero{background:linear-gradient(135deg,#0a3d53,#0e5a7a 60%,#14739a);color:#fff;border-radius:22px;padding:16px 22px 18px;margin-bottom:16px}
+.ghero h2{font-family:var(--display);font-weight:400;font-size:clamp(24px,4vw,36px);margin:0;line-height:1.3;text-wrap:balance}
+.ghero p{margin:2px 0 0;font-size:14px;font-weight:700;color:#cfeaf5}
+.ggrid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:980px){.ggrid{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:start}.village{position:sticky;top:12px}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:18px;min-width:0;box-shadow:0 14px 30px -22px rgba(0,0,0,.45)}
+.panel h3.t{font-family:var(--display);font-weight:400;font-size:24px;margin:0 0 8px;color:var(--water)}
+.vhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:8px}
+.vhead p{margin:0;font-size:13px;font-weight:700;color:var(--muted);line-height:1.7}
+.icon-btn{flex:none;border:1px solid var(--line);background:var(--surface2);border-radius:12px;min-width:44px;height:44px;font-size:18px;cursor:pointer}
+.vscene{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line)}
+.slot .tent,.slot .house{transform-box:fill-box;transform-origin:50% 100%;transition:transform .55s cubic-bezier(.3,1.5,.5,1),opacity .35s}
+.slot .house{transform:scale(0);opacity:0}
+.slot.built .tent{transform:scale(0);opacity:0;transition-duration:.35s}
+.slot.built .house{transform:scale(1);opacity:1;transition-delay:.3s}
+.olive-drop{transition:transform .9s cubic-bezier(.22,1,.36,1)}
+#vflag{transition:transform .8s ease,opacity .4s;transform:translateY(30px);opacity:0}
+#vflag.up{transform:none;opacity:1}
+.tally{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.tally>span{flex:1 1 140px;display:flex;align-items:center;justify-content:space-between;gap:6px;background:var(--surface2);border:1px solid var(--line);border-radius:14px;padding:8px 12px;font-weight:800;font-size:14px}
+.tally b{font-size:20px;font-variant-numeric:tabular-nums}
+.key{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:4px;font-size:12.5px;font-weight:700;color:var(--muted)}
+.qhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.chip{background:var(--warn-bg);color:var(--warn);font-weight:900;font-size:13px;padding:4px 12px;border-radius:999px}
+.tbadge{background:var(--sky);color:var(--water);font-weight:900;font-size:12px;padding:4px 10px;border-radius:999px}
+.count{margin-inline-start:auto;font-size:13px;font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums}
+.seg{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;margin:10px 0 12px;padding:0;list-style:none}
+.seg li{height:8px;border-radius:99px;background:var(--line)}
+.seg li.cur{background:var(--water-l)}
+.seg li.olive{background:var(--good)}
+.seg li.house{background:var(--sel-line)}
+.seg li.miss{background:var(--bad)}
+.droprow{display:flex;gap:10px;align-items:flex-end;margin-bottom:6px}
+.drop{flex:none;width:52px}
+.drop svg{width:100%;height:auto;display:block}
+.drop.hop{animation:hop .6s ease}
+.drop.sad{animation:wob .5s ease}
+@keyframes hop{0%,100%{transform:none}40%{transform:translateY(-12px)}}
+@keyframes wob{0%,100%{transform:none}30%{transform:rotate(-8deg)}70%{transform:rotate(8deg)}}
+.bubble{position:relative;margin:0;background:var(--sky);color:var(--ink);border-radius:16px 16px 16px 4px;padding:10px 14px;font-size:14px;font-weight:700;line-height:1.75;min-width:0}
+.qtext{font-size:clamp(18px,2.3vw,21px);font-weight:900;line-height:1.7;margin:10px 0 12px;text-wrap:balance}
+.inst{font-size:13px;font-weight:700;color:var(--muted);margin:-4px 0 10px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:50px;text-align:right;padding:10px 14px;background:var(--surface2);border:2px solid var(--line);border-radius:16px;font-size:16px;font-weight:800;color:var(--ink);cursor:pointer;transition:background .2s,border-color .2s}
+.opt:hover:not(:disabled){border-color:var(--sel-line);background:var(--sel)}
+.opt .l{flex:none;width:32px;height:32px;border-radius:10px;background:var(--line);display:grid;place-items:center;font-size:14px;font-weight:900}
+.opt:disabled{cursor:default}
+.opt.on{border-color:var(--sel-line);background:var(--sel)}
+.right,.opt.right{background:var(--good-bg)!important;border-color:var(--good)!important}
+.wrong,.opt.wrong{background:var(--bad-bg)!important;border-color:var(--bad)!important}
+.opt.wrong:disabled{opacity:.75}
+.opt .mk{margin-inline-start:auto;font-weight:900}
+.right .mk{color:var(--good)}.wrong .mk{color:var(--bad)}
+.btn{background:var(--btn);color:var(--btn-ink);border:0;border-radius:14px;padding:11px 20px;font-size:15px;font-weight:900;cursor:pointer;min-height:46px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.ghost{background:var(--surface2);color:var(--ink);border:1px solid var(--line)}
+.actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;margin-top:14px}
+.fb{margin-top:14px;font-weight:800;font-size:15px;padding:10px 14px;border-radius:14px;line-height:1.8;border:1px solid}
+.fb.ok{background:var(--good-bg);border-color:var(--good)}
+.fb.no{background:var(--bad-bg);border-color:var(--bad)}
+.fb.try{background:var(--warn-bg);border-color:var(--sel-line)}
+.fb b.h{color:var(--warn)}
+.fact{margin-top:10px;background:var(--surface2);border:1px dashed var(--water-l);border-radius:14px;padding:10px 14px;font-size:14px;font-weight:700;line-height:1.85}
+.fact::before{content:"معلومة من بلادنا: ";color:var(--water);font-weight:900}
+/* experiment */
+.lab{border:1px solid var(--line);border-radius:16px;padding:10px;margin-bottom:12px;background:var(--surface2)}
+.labsvg{width:100%;max-width:420px;height:auto;display:block;margin:0 auto}
+.ctrls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:center;margin:8px 0}
+.grp{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.grp>span{font-size:13px;font-weight:900;color:var(--muted);margin-inline-end:4px}
+.seg-b{border:2px solid var(--line);background:var(--surface);border-radius:12px;padding:6px 10px;font-weight:800;font-size:14px;cursor:pointer;min-height:40px}
+.seg-b[aria-pressed="true"]{border-color:var(--sel-line);background:var(--sel)}
+.trials{width:100%;border-collapse:collapse;font-size:13px;font-weight:700;margin-top:6px;font-variant-numeric:tabular-nums}
+.trials th,.trials td{border:1px solid var(--line);padding:5px 6px;text-align:center}
+.trials th{background:var(--surface);font-weight:900}
+.trials td.fast{color:var(--good);font-weight:900}
+.lock{font-size:13px;font-weight:800;color:var(--warn);text-align:center;margin:8px 0 0}
+/* tf */
+.tfl{display:grid;gap:8px}
+.tfr{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;border:2px solid var(--line);border-radius:14px;padding:8px 12px;background:var(--surface2)}
+.tfr p{margin:0;font-weight:800;line-height:1.7;min-width:0}
+.tfr .why{grid-column:1/-1;font-size:13px;font-weight:700;color:var(--muted)}
+.tfb{display:flex;gap:6px}
+/* order / sort / label / fill / match */
+.pool{display:flex;flex-wrap:wrap;gap:8px;min-height:48px;padding:8px;border:2px dashed var(--line);border-radius:14px;margin-bottom:10px}
+.pool:empty::after{content:"اكتملت البطاقات ✓";font-size:13px;font-weight:800;color:var(--muted);align-self:center}
+.card2{border:2px solid var(--line);background:var(--surface);border-radius:12px;padding:8px 12px;font-weight:800;font-size:14.5px;cursor:pointer;min-height:44px;text-align:right;line-height:1.6}
+.card2.sel{border-color:var(--sel-line);background:var(--sel);box-shadow:0 0 0 3px rgba(217,154,30,.25)}
+.card2:disabled{opacity:.4;cursor:default}
+.seqlist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.seqlist li{display:flex;align-items:center;gap:10px}
+.seqlist .n{flex:none;width:32px;height:32px;border-radius:50%;background:var(--water);color:var(--surface);display:grid;place-items:center;font-weight:900}
+.seqlist .card2,.seqlist .empty{flex:1}
+.empty{border:2px dashed var(--line);border-radius:12px;min-height:44px;display:flex;align-items:center;padding:0 12px;font-size:13px;font-weight:700;color:var(--muted)}
+.bins{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.bin{border:2px solid var(--line);border-radius:14px;padding:8px;display:flex;flex-direction:column;gap:6px;min-height:150px;background:var(--surface2);min-width:0}
+.bin .bh{border:0;background:var(--sky);color:var(--water);border-radius:10px;padding:8px;font-weight:900;font-size:14px;cursor:pointer;min-height:44px}
+.bin.ready .bh{background:var(--sel);color:var(--ink);outline:2px dashed var(--sel-line)}
+.bin .card2{font-size:13px;padding:6px 8px}
+@media(max-width:520px){.bins{grid-template-columns:1fr}.bin{min-height:0}}
+.diag{width:100%;max-width:440px;display:block;margin:4px auto 10px;height:auto}
+.diag .st rect{fill:var(--surface);stroke:var(--water);stroke-width:1.2}
+.diag .st text{fill:var(--ink);font:800 12px var(--body)}
+.diag.focus .st{opacity:.45}
+.diag.focus .st.on{opacity:1}
+.diag .st.on rect{fill:var(--sun);stroke:#a8731f;stroke-width:2}
+.diag .st.on text{fill:#1b1b1b}
+.slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+.slotb{display:flex;align-items:center;gap:8px;border:2px dashed var(--line);border-radius:12px;padding:6px 10px;min-height:46px;cursor:pointer;background:var(--surface);font-weight:800;text-align:right}
+.slotb .lt{flex:none;width:30px;height:30px;border-radius:50%;background:var(--water);color:var(--surface);display:grid;place-items:center;font-weight:900}
+.slotb.filled{border-style:solid}
+.sent{font-size:17px;font-weight:800;line-height:2.4;background:var(--surface2);border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:10px}
+.blank{display:inline-block;min-width:96px;border:0;border-bottom:3px dashed var(--water-l);background:var(--sky);border-radius:8px 8px 0 0;padding:0 10px;font:900 16px var(--body);color:var(--water);cursor:pointer;line-height:1.9;vertical-align:baseline}
+.blank.filled{border-bottom-style:solid}
+.match{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:10px}
+.match .col{display:grid;gap:8px;align-content:start}
+.pb{display:inline-grid;place-items:center;flex:none;width:24px;height:24px;border-radius:50%;font-size:12px;font-weight:900;color:#fff;margin-inline-start:6px}
+.p0{background:#0e5a7a}.p1{background:#b3471f}.p2{background:#556b2f}.p3{background:#7a3f9a}
+.card2.pair0{border-color:#0e5a7a}.card2.pair1{border-color:#b3471f}.card2.pair2{border-color:#556b2f}.card2.pair3{border-color:#7a3f9a}
+.card2 .row{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.mlist{display:grid;gap:8px}
+.chk{display:flex;align-items:center;gap:10px;width:100%;min-height:50px;text-align:right;padding:8px 14px;background:var(--surface2);border:2px solid var(--line);border-radius:14px;font-size:15px;font-weight:800;cursor:pointer}
+.chk .bx{flex:none;width:24px;height:24px;border:2px solid var(--muted);border-radius:6px;display:grid;place-items:center;font-size:14px}
+.chk[aria-pressed="true"]{border-color:var(--sel-line);background:var(--sel)}
+.chk[aria-pressed="true"] .bx{background:var(--water);border-color:var(--water);color:var(--surface)}
+.steps{margin:0 0 12px;padding:0 22px 0 0;display:grid;gap:8px;font-size:15px;line-height:1.75}
+.steps b{color:var(--water)}
+.namebox{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 14px}
+.namebox label{font-weight:900;font-size:14px}
+.namebox input{flex:1 1 200px;min-width:0;border:2px solid var(--line);border-radius:12px;padding:9px 12px;font:700 15px var(--body);color:var(--ink);background:var(--surface)}
+.center{text-align:center}
+.rep{width:100%;border-collapse:collapse;font-size:14px;font-weight:700;margin:10px 0}
+.rep th,.rep td{border-bottom:1px solid var(--line);padding:7px 6px;text-align:right}
+.rep th{color:var(--muted);font-size:12.5px}
+.stages{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.stages span{font-size:13px;font-weight:800;padding:4px 10px;border-radius:99px;border:1px solid var(--line);background:var(--surface2)}
+.stages span.okk{border-color:var(--good);background:var(--good-bg)}
+.stages span.rev{border-color:var(--bad);background:var(--bad-bg)}
+.exit textarea{width:100%;min-height:90px;border:2px solid var(--line);border-radius:14px;padding:10px;font:700 15px var(--body);color:var(--ink);background:var(--surface);line-height:1.8}
+.starters{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.starters button{border:1px dashed var(--water-l);background:var(--sky);color:var(--water);border-radius:99px;padding:5px 12px;font-weight:800;font-size:13px;cursor:pointer;min-height:36px}
+.gfoot{margin:18px 0 0;text-align:center;font-size:13px;font-weight:700;color:var(--muted)}
+.tblwrap{overflow-x:auto}
+.vid{margin:10px 0 14px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface2)}
+.vid video{display:block;width:100%;aspect-ratio:16/9;background:#bfe6f7;max-width:100%}
+.vid figcaption{padding:8px 12px 2px;font-size:14px;font-weight:900}
+.chap{display:flex;flex-wrap:wrap;gap:6px;padding:6px 12px 12px}
+.chap button,.clipbtn{border:1px solid var(--water-l);background:var(--sky);color:var(--water);border-radius:99px;padding:5px 12px;font-weight:800;font-size:13px;cursor:pointer;min-height:36px;font-variant-numeric:tabular-nums}
+.clipbtn{margin-top:8px;display:inline-flex;gap:6px;align-items:center}
+.vmodal{position:fixed;inset:0;z-index:60;background:rgba(10,10,10,.7);display:flex;align-items:center;justify-content:center;padding:12px max(12px,env(safe-area-inset-right,0px)) 12px max(12px,env(safe-area-inset-left,0px))}
+.vwin{background:var(--surface);border-radius:18px;overflow:hidden;width:min(860px,100%)}
+.vwin header{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 12px;border-bottom:1px solid var(--line)}
+.vwin header b{font-size:15px}
+.vwin video{display:block;width:100%;aspect-ratio:16/9;background:#bfe6f7}
+@media (prefers-reduced-motion:reduce){.slot .tent,.slot .house,.olive-drop,#vflag,.card{transition:none}.drop.hop,.drop.sad{animation:none}}
+
+/* ---------- bad iframe ---------- */
+#v-bad iframe{width:100%;height:100%;border:0;display:block;background:#fff}
+
+/* ---------- study ---------- */
+.study{max-width:1000px;margin:0 auto;padding-block:20px 40px}
+.paper{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 18px 34px -26px rgba(0,0,0,.45)}
+.paper-in{padding:20px clamp(16px,3vw,34px) 28px}
+.study h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1.3;text-wrap:balance}
+.study .sub{font-weight:800;color:var(--muted);margin:2px 0 12px}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 4px}
+.toc button{border:1px solid var(--line);background:var(--surface2);border-radius:99px;padding:5px 12px;font-weight:800;font-size:13px;cursor:pointer;min-height:36px}
+.sec{border-top:1px solid var(--line);padding-top:18px;margin-top:22px;scroll-margin-top:12px}
+.sec h3{font-size:21px;font-weight:900;margin:0 0 10px;display:flex;gap:10px;align-items:baseline}
+.sec h3 .no{font-family:var(--display);font-weight:400;color:var(--red);font-size:24px}
+.sec p,.sec li{font-size:15px;line-height:1.95;font-weight:600;max-width:72ch}
+.sec ul,.sec ol{padding-inline-start:22px;margin:6px 0}
+.abstract{background:var(--surface2);border-inline-start:5px solid var(--green);border-radius:12px;padding:12px 16px;margin:8px 0}
+.abstract p{margin:0}
+.kw{font-size:13px!important;color:var(--muted)}
+table.t{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0;min-width:560px}
+table.t th,table.t td{border:1px solid var(--line);padding:8px 10px;text-align:right;vertical-align:top;line-height:1.75;font-weight:600}
+table.t th{background:var(--cmp-bg);font-weight:900}
+table.t td.num{text-align:center;font-variant-numeric:tabular-nums;font-weight:900}
+.cap{font-size:13px;font-weight:800;color:var(--muted);margin:4px 0 0}
+.domain{margin-top:16px}
+.domain h4{font-size:17px;font-weight:900;margin:0 0 8px;color:var(--ink);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.domain h4 small{font-size:12px;font-weight:800;color:var(--muted)}
+.crit{border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.crit header{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 12px;background:var(--bg)}
+.crit header b{font-size:15px;font-weight:900}
+.ref{font-size:12px;font-weight:800;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+.sc{display:flex;gap:6px}
+.sc span{font-size:12px;font-weight:900;padding:2px 9px;border-radius:99px;font-variant-numeric:tabular-nums}
+.sc .sg{background:var(--good-bg);color:var(--good)}.sc .sb{background:var(--bad-bg);color:var(--bad)}
+.cols{display:grid;grid-template-columns:1fr 1fr}
+.cols div{padding:10px 12px;font-size:14px;line-height:1.85;font-weight:600;min-width:0}
+.cols .g{background:var(--good-bg)}.cols .b{background:var(--bad-bg)}
+.cols div>i{font-style:normal;display:block;font-size:12px;font-weight:900;margin-bottom:2px}
+.cols .g>i{color:var(--good)}.cols .b>i{color:var(--bad)}
+.imp{padding:8px 12px;font-size:13.5px;font-weight:700;line-height:1.8;border-top:1px solid var(--line);color:var(--muted)}
+.imp b{color:var(--ink)}
+@media(max-width:600px){.cols{grid-template-columns:1fr}.top h1{display:none}}
+.bars{display:grid;gap:12px;margin:10px 0}
+.bar-row{display:grid;grid-template-columns:minmax(120px,190px) minmax(0,1fr);gap:10px;align-items:center}
+.bar-row .lb{font-size:13.5px;font-weight:800;line-height:1.5}
+.track{position:relative;display:grid;gap:4px;padding:4px 0;background-image:linear-gradient(to left,var(--line) 1px,transparent 1px);background-size:25% 100%;background-repeat:repeat-x;border-inline-end:1px solid var(--line)}
+.bar{height:16px;border-radius:4px 0 0 4px;display:flex;align-items:center;justify-content:flex-start;font-size:11px;font-weight:900;padding-inline-start:6px;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bar.bg_{background:#007a3d}.bar.bb_{background:#c0111f}
+.axis{display:grid;grid-template-columns:minmax(120px,190px) minmax(0,1fr);gap:10px}
+.axis div{display:flex;justify-content:space-between;font-size:11px;font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums}
+.legend{display:flex;gap:8px;font-size:13px;font-weight:800;margin:6px 0;flex-wrap:wrap}
+.legend i{font-style:normal;padding:3px 12px;border-radius:999px}
+.legend .g{background:var(--good-bg);color:var(--good)}.legend .b{background:var(--bad-bg);color:var(--bad)}
+.totals{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:12px 0}
+.totals div{border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:var(--surface2)}
+.totals b{display:block;font-size:30px;font-family:var(--display);font-weight:400;font-variant-numeric:tabular-nums}
+.totals .g b{color:var(--good)}.totals .b b{color:var(--bad)}
+.totals span{font-size:13px;font-weight:800;color:var(--muted)}
+.refs{direction:ltr;text-align:left;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:1.75;padding-left:2em;text-indent:-2em;list-style:none;margin:0;padding-inline-start:0}
+.refs li{padding-left:2em;text-indent:-2em;margin-bottom:6px;font-weight:400;max-width:none}
+.limit{background:var(--warn-bg);border:1px solid var(--sel-line);border-radius:12px;padding:10px 14px}
+</style>
+
+<div class="app" dir="rtl" lang="ar">
+<nav class="top" aria-label="التنقل">
+<h1>⛺🫒 تحدي الخيمة والزيتون</h1>
+<button class="tab" data-v="home">الرئيسية</button>
+<button class="tab" data-v="good">✅ التصميم الجيد</button>
+<button class="tab" data-v="bad">❌ التصميم السيئ</button>
+<button class="tab" data-v="study">⚖️ الدراسة المقارنة</button>
+</nav>
+<div class="flag" aria-hidden="true"></div>
+<main>
+
+<!-- ================= HOME ================= -->
+<section class="view" id="v-home">
+<div class="home wrapx">
+<div class="hero">
+<div class="tz" aria-hidden="true"></div>
+<div class="hero-in">
+<svg class="scene-h" viewBox="0 0 340 100" role="img" aria-label="خيمة يُبنى مكانها بيت يرفرف عليه علم فلسطين، وبجانبه شجرة زيتون تحتها كوفية">
+<rect x="0" y="88" width="340" height="6" rx="3" fill="#cbb98f"/>
+<polygon points="6,90 52,90 56,97 2,97" fill="#fff" stroke="#141414" stroke-width="1"/>
+<path d="M8 93 H50" stroke="#141414" stroke-width=".8" stroke-dasharray="2 2"/>
+<circle cx="18" cy="93" r="2" fill="#3d2b4a"/><circle cx="30" cy="94" r="2" fill="#3d2b4a"/><circle cx="41" cy="93" r="2" fill="#3d2b4a"/>
+<path d="M28,89 C27,78 31,71 27,60 M27,70 C22,66 20,62 18,58" stroke="#6b4a2a" stroke-width="5" fill="none" stroke-linecap="round"/>
+<g fill="#6b8f3a"><ellipse cx="28" cy="46" rx="24" ry="15"/><ellipse cx="14" cy="56" rx="13" ry="8"/><ellipse cx="42" cy="56" rx="13" ry="8"/></g>
+<g fill="#3d2b4a"><circle cx="18" cy="44" r="2.2"/><circle cx="34" cy="40" r="2.2"/><circle cx="40" cy="52" r="2.2"/><circle cx="24" cy="54" r="2.2"/></g>
+<g transform="translate(58,16)">
+<line x1="44" y1="7" x2="44" y2="-12" stroke="#4a3a2a" stroke-width="2"/>
+<rect x="44" y="-12" width="22" height="4" fill="#141414"/><rect x="44" y="-8" width="22" height="4" fill="#ffffff" stroke="#d9d2c2" stroke-width=".4"/><rect x="44" y="-4" width="22" height="4" fill="#007a3d"/><polygon points="44,-12 52,-6 44,0" fill="#ce1126"/>
+<rect x="12" y="36" width="64" height="36" fill="#f6e7c8" stroke="#b89b6a" stroke-width="1.5"/><polygon points="4,38 44,6 84,38" fill="#c4502f" stroke="#9c3d22" stroke-width="1.5" stroke-linejoin="round"/><path d="M36,72 V58 a8.5,8.5 0 0 1 17,0 V72z" fill="#7a4b2a"/><rect x="18" y="45" width="12" height="11" fill="#9fd3ea" stroke="#b89b6a"/><rect x="58" y="45" width="12" height="11" fill="#9fd3ea" stroke="#b89b6a"/>
+</g>
+<g fill="none" stroke="#007a3d" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 7"><path d="M228,50 C208,36 182,36 162,50"/></g>
+<path d="M170,42 L162,50 L172,54" fill="none" stroke="#007a3d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(240,20)"><line x1="35" y1="14" x2="35" y2="2" stroke="#7a5418" stroke-width="2.5"/><polygon points="35,2 46,6 35,10" fill="#ce1126"/><polygon points="5,68 35,12 65,68" fill="#dfa648" stroke="#a8731f" stroke-width="2" stroke-linejoin="round"/><polygon points="27,68 35,42 43,68" fill="#6b4a1a"/></g>
+<path d="M300,30 C300,30 290,43 290,49 a10,10 0 0 0 20,0 C310,43 300,30 300,30z" fill="#3a8fb7"/><circle cx="296" cy="50" r="1.5" fill="#0a2a3a"/><circle cx="304" cy="50" r="1.5" fill="#0a2a3a"/><path d="M296 54 q4 3 8 0" stroke="#0a2a3a" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+</svg>
+<span class="eyebrow">من الخيمة إلى البيت • ومن الغيمة إلى شجرة الزيتون</span>
+<h2>رحلة <em>قطّورة</em> في دورة المياه</h2>
+<div class="grade">العلوم والحياة • الصف الرابع الأساسي</div>
+<div class="by"><span>إعداد: <b>مها السيلاوي</b></span><span>إشراف: <b>د. مجدي عقل</b></span></div>
+<p class="lead">نشاط واحد يجمع تحدّي الخيمة وتحدّي قطف الزيتون. يعمل الصف كله فريقاً واحداً يرافق «قطّورة» في رحلتها من بحر غزة إلى الغيمة ثم إلى شجرة الزيتون. كل نشاط يحلّه الفريق يُزيل خيمة ويبني مكانها بيتاً، وكل نشاط يُحَلّ من المحاولة الأولى يُسقط حبة زيتون على الكوفية. صُمّم النشاط مرّتين: مرّة وفق معايير التصميم التعليمي، ومرّة بأخطاء مقصودة للنقد والتحليل.</p>
+<ul class="facts"><li><b>١٠</b> أنشطة</li><li><b>٩</b> أنماط تفاعل مختلفة</li><li>فريق واحد للصف</li><li>🎬 فيديو «رحلة قطّورة»</li><li>🏠 بيت لكل نشاط • 🫒 زيتونة لكل إتقان</li></ul>
+</div>
+<div class="tz" aria-hidden="true"></div>
+</div>
+<div class="cards">
+<button class="card good" data-go="good"><span class="k">جرّبه مع الصف</span><h3>التصميم الجيد</h3><span class="d">تجربة محاكاة، تصنيف، توصيل، ترتيب، تسمية مخطط، إكمال فراغ وغيرها، مع تلميح ومحاولة ثانية وتقرير للمعلّمة.</span></button>
+<button class="card bad" data-go="bad"><span class="k">للنقد فقط</span><h3>التصميم السيئ</h3><span class="d">المحتوى العلمي نفسه، لكن بأزرار وهمية وألوان تدور ومؤقت مقلق وعلامة بلا تغذية راجعة.</span></button>
+<button class="card cmp" data-go="study"><span class="k">٢١ معياراً • ٦ مجالات</span><h3>الدراسة المقارنة</h3><span class="d">تحليل أكاديمي موثّق بالمراجع: سلّم تقدير كمّي، تصنيف بلوم، الحِمل المعرفي، ونتائج وتوصيات.</span></button>
+</div>
+<p class="note">النسخة السيئة عمداً مخصّصة للنقد التربوي، ولا تُعرض على الطلاب نشاطاً فعلياً.</p>
+</div>
+</section>
+
+<!-- ================= GOOD ================= -->
+<section class="view" id="v-good" hidden>
+<div class="game wrapx">
+<header class="ghero">
+<h2>رحلة قطّورة: تحدّي الخيمة والزيتون</h2>
+<p>دورة المياه في الطبيعة • العلوم والحياة • الصف الرابع الأساسي</p>
+</header>
+<div class="ggrid">
+<section class="panel" id="qpanel" aria-live="polite"></section>
+<aside class="panel village" aria-label="قرية الفريق">
+<div class="vhead"><div><h3 class="t" id="vname">قرية فريق الصف الرابع</h3><p>كل نشاط تحلّونه يُزيل خيمة ويبني بيتاً. وكل نشاط تحلّونه من المحاولة الأولى يُسقط حبة زيتون على الكوفية.</p></div><button class="icon-btn" id="mute" data-x="mute" aria-pressed="false" aria-label="كتم الصوت" title="كتم الصوت">🔊</button></div>
+<svg class="vscene" id="vscene" viewBox="0 0 360 210" role="img" aria-label="القرية"></svg>
+<div class="tally"><span>🏠 بيوت <b><span id="nh">٠</span> / ١٠</b></span><span>🫒 زيتون على الكوفية <b><span id="no">٠</span> / ١٠</b></span></div>
+<ul class="key"><li>🫒 + 🏠 حلّ صحيح من المحاولة الأولى</li><li>🏠 حلّ صحيح بعد التلميح في المحاولة الثانية</li><li>⛺ تبقى الخيمة ويُعرض الحلّ للمراجعة</li></ul>
+</aside>
+</div>
+<div class="vmodal" id="vmodal" hidden role="dialog" aria-modal="true" aria-labelledby="vmt"><div class="vwin"><header><b id="vmt">🎬 مقطع من الفيديو</b><button class="icon-btn" data-x="vclose" aria-label="إغلاق">✕</button></header><video id="clipVid" src="media/qatroura.mp4" preload="none" playsinline controls></video></div></div>
+<p class="gfoot">إعداد: <b>مها السيلاوي</b> • إشراف: <b>د. مجدي عقل</b></p>
+</div>
+</section>
+
+<!-- ================= BAD ================= -->
+<section class="view" id="v-bad" hidden><iframe id="f-bad" title="التصميم السيئ"></iframe></section>
+
+<!-- ================= STUDY ================= -->
+<section class="view" id="v-study" hidden>
+<div class="study wrapx">
+<article class="paper">
+<div class="tz" aria-hidden="true"></div>
+<div class="paper-in">
+<span class="eyebrow">دراسة تحليلية مقارنة</span>
+<h2>التصميم الجيد والتصميم السيئ لنشاط «رحلة قطّورة»</h2>
+<p class="sub">تحليل قائم على المعايير لنسختين من نشاط تفاعلي في دورة المياه • الصف الرابع الأساسي<br>إعداد: مها السيلاوي • إشراف: د. مجدي عقل</p>
+<div class="abstract"><p><b>الملخّص.</b> تقارن هذه الدراسة بين نسختين من نشاط تفاعلي واحد في وحدة دورة المياه، تشتركان في المفاهيم العلمية العشرة نفسها وتختلفان في قرارات التصميم وحدها. حُلّلت النسختان وفق ٢١ معياراً موزّعة على ستة مجالات مستمدّة من نظرية الحِمل المعرفي، ومبادئ التعلّم بالوسائط المتعددة، ونماذج التغذية الراجعة، ونموذج ARCS للدافعية، وإرشادات WCAG 2.2، ومبادئ نيلسن لقابلية الاستخدام. حصل التصميم الجيد على <b id="absG"></b> من الدرجة الكلية، والتصميم السيئ على <b id="absB"></b>. وتظهر أكبر الفجوات في التغذية الراجعة والحِمل الدخيل وتنوّع مستويات التفكير.</p></div>
+<p class="kw"><b>كلمات مفتاحية:</b> التصميم التعليمي، الأنشطة التفاعلية، الحِمل المعرفي، التغذية الراجعة، دورة المياه، التراث الفلسطيني.</p>
+<nav class="toc" aria-label="محتويات الدراسة">
+<button data-sec="s1">١. المنهجية</button><button data-sec="s2">٢. وصف النشاط</button><button data-sec="s3">٣. المقارنة التفصيلية</button><button data-sec="s4">٤. التقدير الكمّي</button><button data-sec="s5">٥. تصنيف بلوم</button><button data-sec="s6">٦. الحِمل المعرفي</button><button data-sec="s7">٧. النتائج والتوصيات</button><button data-sec="s8">المراجع</button>
+</nav>
+
+<section class="sec" id="s1">
+<h3><span class="no">١</span>المنهجية وإطار التحليل</h3>
+<p>اتُّبع <b>التحليل المقارن القائم على المعايير</b>. ولعزل أثر التصميم ضُبط المحتوى العلمي: النسختان تغطيان المفاهيم نفسها (مصدر الطاقة، التبخّر، التكاثف، الهطول، التجمّع والمياه الجوفية، حالات الماء، النتح، ترتيب المراحل، الزراعة البعلية، ترشيد الماء)، لذلك لم تُحسب دقّة المحتوى ضمن الدرجات. اشتُقّت المعايير من ستة أُطر نظرية، وقُدّر كل معيار على سلّم من أربع درجات:</p>
+<div class="tblwrap"><table class="t"><thead><tr><th>الدرجة</th><th>الوصف</th></tr></thead><tbody>
+<tr><td class="num">٤</td><td>المعيار متحقّق بالكامل، وتوجد أدلّة واضحة عليه في الواجهة.</td></tr>
+<tr><td class="num">٣</td><td>المعيار متحقّق مع ملاحظات أو حدود قابلة للتحسين.</td></tr>
+<tr><td class="num">٢</td><td>المعيار متحقّق جزئياً، وفيه خلل يؤثّر في التعلّم.</td></tr>
+<tr><td class="num">١</td><td>المعيار غير متحقّق، أو يتعارض التصميم معه.</td></tr>
+</tbody></table></div>
+<div class="tblwrap"><table class="t"><thead><tr><th>الإطار النظري</th><th>ما يقيسه في هذه الدراسة</th></tr></thead><tbody>
+<tr><td>نظرية الحِمل المعرفي (Sweller, 1988)</td><td>هل تُستهلك الذاكرة العاملة في التعلّم أم في عناصر دخيلة؟</td></tr>
+<tr><td>مبادئ التعلّم بالوسائط المتعددة (Mayer, 2021)</td><td>التجزئة، الاتساق (حذف المشتّتات)، الإشارة البصرية، التدريب المسبق، الوسيلة (صورة مع سرد صوتي).</td></tr>
+<tr><td>نموذج التغذية الراجعة (Hattie &amp; Timperley, 2007; Shute, 2008)</td><td>فورية التغذية الراجعة ومستواها وما تقوله عن الخطوة التالية.</td></tr>
+<tr><td>نموذج ARCS (Keller, 2010) ونظرية تقرير المصير (Ryan &amp; Deci, 2000)</td><td>الانتباه، الصلة، الثقة، الرضا، والحاجة إلى الكفاءة والانتماء.</td></tr>
+<tr><td>تصنيف بلوم المعدّل (Anderson &amp; Krathwohl, 2001)</td><td>مستويات التفكير التي تستدعيها الأنشطة.</td></tr>
+<tr><td>WCAG 2.2 (W3C, 2023) ومبادئ نيلسن (Nielsen, 1994)</td><td>التباين، الحركة، حجم أهداف اللمس، التحكّم في الوقت، ووضوح حالة النظام.</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="sec" id="s2">
+<h3><span class="no">٢</span>وصف النشاط ونواتج التعلّم</h3>
+<p>يُقدَّم النشاط على السبورة التفاعلية أو جهاز العرض، ويعمل الصف فريقاً واحداً تقوده المعلّمة. يُتوقّع من الطالب في نهايته أن:</p>
+<ol>
+<li>يحدّد الشمس مصدراً للطاقة المحرّكة لدورة المياه.</li>
+<li>يرتّب مراحل الدورة الأربع (تبخّر، تكاثف، هطول، تجمّع) ويسمّيها على مخطط.</li>
+<li>يفسّر ظواهر يومية (جفاف الغسيل، الندى، قطرات الزجاجة الباردة) بمفهومي التبخّر والتكاثف.</li>
+<li>يصنّف أمثلة من البيئة الفلسطينية حسب حالة الماء.</li>
+<li>يستنتج أثر الحرارة والرياح في سرعة التبخّر من تجربة محاكاة.</li>
+<li>يقيّم سلوكيات يومية من حيث المحافظة على الماء، ويربط ذلك بالتبخّر.</li>
+</ol>
+<p>في التصميم الجيد يعمل كل نشاط وفق دورة ثابتة: سياق قصصي ثم مهمّة ثم تحقّق. إذا أصاب الفريق من المحاولة الأولى نال 🫒 و🏠، وإذا أخطأ ظهر تلميح ومحاولة ثانية، فإن أصاب نال 🏠، وإن أخطأ ثانية عُرض الحلّ مع تفسيره وبقيت ⛺. تأتي بعد كل نشاط معلومة إثرائية من البيئة الفلسطينية.</p>
+</section>
+
+<section class="sec" id="s3">
+<h3><span class="no">٣</span>المقارنة التفصيلية حسب المعايير</h3>
+<div class="legend"><i class="g">✅ التصميم الجيد</i><i class="b">❌ التصميم السيئ</i></div>
+<div id="critList"></div>
+</section>
+
+<section class="sec" id="s4">
+<h3><span class="no">٤</span>التقدير الكمّي</h3>
+<div class="totals" id="totals"></div>
+<p class="cap">شكل ١: متوسط الدرجة في كل مجال (من ٤)</p>
+<div class="legend"><i class="g">التصميم الجيد</i><i class="b">التصميم السيئ</i></div>
+<div class="bars" id="bars"></div>
+<div class="axis" aria-hidden="true"><span></span><div><span>٠</span><span>١</span><span>٢</span><span>٣</span><span>٤</span></div></div>
+<div class="tblwrap"><table class="t" id="scoreTbl"></table></div>
+<p class="cap">جدول ٣: الدرجات التفصيلية للمعايير الواحد والعشرين</p>
+</section>
+
+<section class="sec" id="s5">
+<h3><span class="no">٥</span>تحليل مستويات التفكير (تصنيف بلوم المعدّل)</h3>
+<p>يعتمد التصميم السيئ على نمط واحد هو الاختيار من متعدد بصياغة مختصرة منزوعة السياق، فتتركّز أسئلته في التذكّر. أما التصميم الجيد فيوزّع المفاهيم نفسها على تسعة أنماط تفاعل تستدعي مستويات أعلى، ويضيف بطاقة خروج كتابية غير محسوبة في الدرجة تستدعي مستوى الإنشاء.</p>
+<div class="tblwrap"><table class="t" id="bloomTbl"></table></div>
+<p class="cap">جدول ٤: أنشطة التصميم الجيد ومستوياتها المعرفية</p>
+<div class="tblwrap"><table class="t" id="bloomDist"></table></div>
+<p class="cap">جدول ٥: توزيع البنود على مستويات بلوم في التصميمين</p>
+</section>
+
+<section class="sec" id="s6">
+<h3><span class="no">٦</span>تحليل الحِمل المعرفي</h3>
+<p>تميّز نظرية الحِمل المعرفي بين ثلاثة أنواع من الحِمل على الذاكرة العاملة. الهدف في التصميم أن يقلّ الحِمل الدخيل وأن يُوجَّه الجهد إلى الحِمل البنّاء.</p>
+<div class="tblwrap"><table class="t"><thead><tr><th>نوع الحِمل</th><th>التصميم الجيد</th><th>التصميم السيئ</th></tr></thead><tbody>
+<tr><td><b>الجوهري</b><br>(تعقيد المفهوم نفسه)</td><td>متساوٍ في التصميمين لأن المحتوى مضبوط، لكنه يُقسَّم إلى نشاط واحد في كل شاشة.</td><td>متساوٍ في المحتوى، لكنه يُعرض دفعة واحدة: عشرة أسئلة في صفحة واحدة.</td></tr>
+<tr><td><b>الدخيل</b><br>(ما لا يخدم التعلّم)</td><td>منخفض: لا خلفية متحرّكة، وكل زر له وظيفة، والصوت يحمل معنى ويمكن كتمه. والفيديو لا يعمل تلقائياً، ويُعرض في مقاطع قصيرة.</td><td>مرتفع: <span id="nShapes"></span> شكلاً ورمزاً ملوّناً خلف النص (نصفها يدور)، و<span id="nFake"></span> زراً بلا وظيفة، ومؤقّت، وأرقام عشوائية، وخطوط مختلطة.</td></tr>
+<tr><td><b>البنّاء</b><br>(بناء المخطّطات الذهنية)</td><td>مرتفع: المخطط يربط كل نشاط بمرحلته، والتجربة تبني علاقة سبب ونتيجة، والمعلومة الإثرائية تربط المفهوم بالبيئة.</td><td>منخفض: لا تفسير ولا ربط، فلا يجد الطالب ما يبني عليه.</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="sec" id="s7">
+<h3><span class="no">٧</span>النتائج والتوصيات</h3>
+<p><b>النتائج.</b></p>
+<ol>
+<li>يعمل الفيديو والمخطط في التصميم الجيد معاً: الفيديو يمهّد للمفهوم ويُستدعى عند الخطأ، والمخطط الثابت يبقى مرجعاً أثناء الحلّ. ولم يُستبدل أحدهما بالآخر لأن لكلٍّ منهما وظيفة مختلفة.</li>
+<li>يتفوّق التصميم الجيد في المجالات الستة كلها، وأكبر الفجوات في <b>التغذية الراجعة والتقويم</b> وفي <b>الحِمل المعرفي</b>. الفرق إذن ليس جمالياً، بل يمسّ آليات التعلّم نفسها.</li>
+<li>تنوّع أنماط التفاعل يرفع مستوى التفكير دون تغيير المحتوى، فالمفاهيم العشرة نفسها انتقلت من التذكّر إلى الفهم والتطبيق والتحليل والتقويم.</li>
+<li>المكافأة في التصميم الجيد تمثّل التعلّم نفسه (🏠 للحلّ، 🫒 للإتقان)، فتصبح أداة تقويم تكويني بيد المعلّمة. أما مكافآت التصميم السيئ العشوائية فتفصل النتيجة عن الجهد.</li>
+<li>العمل بفريق واحد يحوّل المنافسة بين الزملاء إلى هدف جماعي (بناء القرية وقطف الزيتون)، وهذا أنسب لطلاب الصف الرابع ويقلّل قلق الطلاب الأضعف.</li>
+<li>بعض أخطاء التصميم السيئ ليست تربوية فحسب بل تمسّ كرامة المتعلّم وإمكانية الوصول، مثل عبارة «أنت طالب سيء» ونسبة تباين ١٫٤:١ في العنوان.</li>
+</ol>
+<p><b>حدود الدراسة.</b></p>
+<div class="limit"><ul>
+<li>التقدير أجرته جهة التصميم نفسها، ويُستحسن عرض سلّم التقدير على محكّمين مستقلّين وحساب نسبة الاتفاق بينهم.</li>
+<li>لم يُجرَّب النشاط ميدانياً بعد. يُقترح تطبيق اختبار قبلي وبعدي على شعبتين، تستخدم إحداهما كل نسخة، لقياس الأثر في التحصيل.</li>
+<li>لا يحفظ التصميم الجيد تقرير الأداء بعد إغلاق الصفحة، وترتيب الأنشطة ثابت لا يتكيّف مع مستوى الصف.</li>
+</ul></div>
+<p><b>توصيات لتطوير التصميم الجيد.</b></p>
+<ol>
+<li>إضافة قراءة صوتية للأسئلة دعماً للطلاب ذوي صعوبات القراءة، وفق مبدأ تعدّد وسائل التمثيل (CAST, 2018).</li>
+<li>إضافة مسار تكيّفي يعيد عرض المرحلة التي ظهرت فيها ⛺ بنشاط بديل في نهاية التحدّي.</li>
+<li>حفظ التقرير وبطاقات الخروج لتتابع المعلّمة تقدّم الصف عبر الحصص.</li>
+<li>السماح للطلاب باختيار ترتيب الأنشطة ضمن كل مرحلة، دعماً للاستقلالية (Ryan &amp; Deci, 2000).</li>
+</ol>
+</section>
+
+<section class="sec" id="s8">
+<h3><span class="no">◆</span>المراجع</h3>
+<ul class="refs" lang="en">
+<li>Anderson, L. W., &amp; Krathwohl, D. R. (Eds.). (2001). <i>A taxonomy for learning, teaching, and assessing: A revision of Bloom's taxonomy of educational objectives</i>. Longman.</li>
+<li>Black, P., &amp; Wiliam, D. (1998). Assessment and classroom learning. <i>Assessment in Education: Principles, Policy &amp; Practice, 5</i>(1), 7–74.</li>
+<li>CAST. (2018). <i>Universal Design for Learning guidelines version 2.2</i>. http://udlguidelines.cast.org</li>
+<li>de Jong, T., &amp; van Joolingen, W. R. (1998). Scientific discovery learning with computer simulations of conceptual domains. <i>Review of Educational Research, 68</i>(2), 179–201.</li>
+<li>Dweck, C. S. (2006). <i>Mindset: The new psychology of success</i>. Random House.</li>
+<li>Gagné, R. M., Wager, W. W., Golas, K. C., &amp; Keller, J. M. (2005). <i>Principles of instructional design</i> (5th ed.). Wadsworth.</li>
+<li>Hattie, J., &amp; Timperley, H. (2007). The power of feedback. <i>Review of Educational Research, 77</i>(1), 81–112.</li>
+<li>Keller, J. M. (2010). <i>Motivational design for learning and performance: The ARCS model approach</i>. Springer.</li>
+<li>Malone, T. W. (1981). Toward a theory of intrinsically motivating instruction. <i>Cognitive Science, 5</i>(4), 333–369.</li>
+<li>Mayer, R. E. (2021). <i>Multimedia learning</i> (3rd ed.). Cambridge University Press.</li>
+<li>Nielsen, J. (1994). Enhancing the explanatory power of usability heuristics. In <i>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</i> (pp. 152–158). ACM.</li>
+<li>Ryan, R. M., &amp; Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. <i>American Psychologist, 55</i>(1), 68–78.</li>
+<li>Shute, V. J. (2008). Focus on formative feedback. <i>Review of Educational Research, 78</i>(1), 153–189.</li>
+<li>Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. <i>Cognitive Science, 12</i>(2), 257–285.</li>
+<li>W3C. (2023). <i>Web Content Accessibility Guidelines (WCAG) 2.2</i>. https://www.w3.org/TR/WCAG22/</li>
+<li>Wood, D., Bruner, J. S., &amp; Ross, G. (1976). The role of tutoring in problem solving. <i>Journal of Child Psychology and Psychiatry, 17</i>(2), 89–100.</li>
+</ul>
+</section>
+</div>
+<div class="tz" aria-hidden="true"></div>
+</article>
+</div>
+</section>
+</main>
+</div>
+
+<!-- ================= BAD DESIGN (rendered in iframe) ================= -->
+<template id="tpl-bad">
+<title>تحدي الخيمة والزيتون (نسخة سيئة التصميم عمداً)</title>
+<style>
+body{margin:0;background:#e0ffff;font-family:Arial,Tahoma,sans-serif;color:#555}
+.wrap{max-width:720px;margin:0 auto;padding:10px;position:relative;z-index:1}
+h1{font-size:25px;color:#7fd6ff;background:#c9f2ff;margin:0 0 8px;padding:10px;text-align:center;font-family:'Courier New',monospace}
+.q{background:rgba(255,255,255,.72);border:1px solid #ddd;padding:7px;margin-bottom:5px;font-size:14px;line-height:1.4}
+.q:nth-child(even){background:rgba(240,240,240,.7);font-family:'Times New Roman',serif}
+.q label{display:inline-block;font-size:11px;margin-left:8px;color:#888}
+#timer{float:left;font-size:13px;color:#999}
+#ok{display:block;margin:12px auto;padding:5px 16px;font-size:12px;background:#ddd;color:#aaa;border:1px solid #ccc}
+.score{font-size:34px;text-align:center;color:#444;margin:10px 0}
+.foot{font-size:10px;color:#aaa;text-align:center;margin-top:14px}
+.bgs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.bgs i,.bgs b{position:absolute;display:block;font-style:normal;font-weight:900;line-height:1;opacity:.6}
+.bgs .spin{animation:spin 20s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.row{text-align:center;margin:6px 0;display:flex;flex-wrap:wrap;gap:4px;justify-content:center}
+.row button{font-size:13px;padding:6px 10px;border:2px solid #000;border-radius:14px;color:#000;font-weight:700;cursor:pointer}
+.res2{background:#ff5500;color:#ffee00;font-size:15px;padding:6px;margin:4px 0;text-align:center}
+textarea{width:100%;height:56px;margin-top:6px;box-sizing:border-box;font-size:12px}
+#camp{text-align:center}#camp svg{width:160px}
+</style>
+<div id="bgs" class="bgs" aria-hidden="true"></div>
+<div class="wrap">
+<span id="timer">٥:٠٠</span>
+<h1>تحدي الخيمة والزيتون - الماء</h1>
+<div class="row fake"><button style="background:#ff0080">التالي ◀</button><button style="background:#00e000">السابق ▶</button><button style="background:#00e5ff">مساعدة ❓</button><button style="background:#ffee00">حفظ 💾</button><button style="background:#ff6a00">إعادة 🔁</button><button style="background:#ff00cc">ابدأ ▶</button><button style="background:#00ff66" data-r="1">🔊</button><button id="star" style="background:#ffee00">🫒</button><button style="background:#00e5ff">سؤال جديد</button><button style="background:#00ff66">خيارات ⚙️</button></div>
+<div id="quiz"></div>
+<div class="row fake"><button style="background:#ffee00">السابق ⬅</button><button style="background:#00e5ff">مشاركة 📤</button><button style="background:#ff00cc">طباعة الشهادة 🖨️</button><button style="background:#00ff66">تخطي ⏭</button><button style="background:#ff6a00">خيمة ⛺</button><button style="background:#8a00ff;color:#fff">بيت 🏠</button><button style="background:#00e000">زيتون 🫒</button></div>
+<div class="q"><b>اكتب ما فهمت عن الماء:</b><textarea placeholder="اكتب هنا..."></textarea><div class="row fake"><button style="background:#8a00ff;color:#fff">إرسال ✉️</button><button style="background:#ffee00">مسح ✖</button><button style="background:#00e5ff">نسخ 📋</button></div></div>
+<div class="row fake"><button style="background:#00e000">ابدأ 🚀</button><button style="background:#ff0080">إلغاء</button><button style="background:#ff6a00">تأكيد ✔</button></div>
+<button id="ok">إنهاء</button>
+<div id="res"></div>
+<div class="foot">نسخة سيئة التصميم عمداً لأغراض النقد والتحليل التربوي • إعداد: مها السيلاوي • إشراف: د. مجدي عقل</div>
+</div>
+<script>
+document.documentElement.lang='ar';document.documentElement.dir='rtl';
+const Q=[
+["ما الذي يحرّك دورة المياه؟",["الرياح","الشمس","القمر","الغيوم"],1],
+["الغسيل يجف أسرع عندما:",["شمس ضعيفة","شمس قوية مع رياح","شمس متوسطة","لا فرق"],1],
+["ظهرت قطرات على زجاجة باردة من الخارج. من أين؟",["من داخل الزجاجة","من بخار الماء في الهواء","من ذوبان الزجاج","من السقف"],1],
+["الغيمة مكوّنة من:",["بخار لا يُرى","قطرات ماء صغيرة","دخان","ملح"],1],
+["سقوط الماء من الغيوم مطراً أو ثلجاً يسمّى:",["التجمّع","التكاثف","التبخّر","الهطول"],3],
+["الماء في الثلج يكون في حالة:",["صلبة","سائلة","غازية","لا شيء"],0],
+["الماء الذي يتسرّب في التربة يكوّن المياه:",["المالحة","الجوفية","الغيوم","الثلج"],1],
+["تطلق أوراق الزيتون بخار الماء بعملية:",["النتح","التجمد","الانصهار","الجريان"],0],
+["الترتيب الصحيح لمراحل الدورة:",["هطول ← تبخّر ← تجمّع ← تكاثف","تبخّر ← تكاثف ← هطول ← تجمّع","تكاثف ← تبخّر ← هطول ← تجمّع","تجمّع ← هطول ← تكاثف ← تبخّر"],1],
+["أيّ سلوك يحافظ على الماء؟",["ترك الصنبور مفتوحاً","السقي وقت الظهيرة","إغلاق الصنبور أثناء تنظيف الأسنان","غسل الساحة يومياً"],2]
+];
+const ans={};let clicks=0,starN=0;
+const toAr=n=>String(n).replace(/\d/g,d=>"٠١٢٣٤٥٦٧٨٩"[d]);
+let ac=null;
+function A(){ac=ac||new(window.AudioContext||window.webkitAudioContext)();if(ac.state==='suspended')ac.resume();return ac;}
+function beep(f,type){try{const a=A(),o=a.createOscillator(),g=a.createGain();o.connect(g);g.connect(a.destination);o.type=type||'square';o.frequency.value=f||330;g.gain.value=.06;o.start();o.stop(a.currentTime+.15);}catch(e){}}
+document.querySelectorAll('.fake button').forEach(b=>b.onclick=()=>{clicks++;if(b.id==='star'){starN++;b.textContent='🫒 '+starN;}beep(b.dataset.r?200+Math.random()*600:330,b.dataset.r?'sawtooth':'square');});
+document.getElementById('quiz').innerHTML=Q.map((q,i)=>`<div class="q">${i+1}) ${q[0]}<br>${q[1].map((o,j)=>`<label><input type="radio" name="q${i}" data-i="${i}" data-j="${j}">${o}</label>`).join('')}</div>`).join('');
+document.querySelectorAll('#quiz input').forEach(r=>r.onclick=()=>{beep();ans[r.dataset.i]=+r.dataset.j;});
+let t=300,done=false;
+setInterval(()=>{if(done)return;t--;const m=Math.floor(t/60),s=t%60;document.getElementById('timer').textContent=m+':'+(s<10?'0':'')+s;if(t<=0)finish();},1000);
+document.getElementById('ok').onclick=finish;
+function finish(){
+ if(done)return;done=true;
+ let sc=0;Q.forEach((q,i)=>{if(ans[i]===q[2])sc++;});
+ let g='';for(let k=0;k<10;k++){const x=k*20;g+=k<sc?`<rect x="${x+3}" y="16" width="14" height="10" fill="#bbb"/><polygon points="${x+1},17 ${x+10},10 ${x+19},17" fill="#999"/>`:`<polygon points="${x+2},26 ${x+10},12 ${x+18},26" fill="#ddd"/>`;}
+ let d='';for(let k=0;k<sc;k++)d+=`<circle cx="${212+(k%5)*6}" cy="${22+(k/5|0)*5}" r="2" fill="#111"/>`;
+ document.getElementById('res').innerHTML=`<div class="score">العلامة: ${toAr(sc*10)} / ١٠٠</div>${sc<5?'<div class="score" style="color:#d00;font-size:26px">أنت طالب سيء 😠</div>':''}<div class="foot" style="font-size:12px;color:#555">عدد النقرات: ${toAr(clicks)} | رقمك العشوائي: ${toAr(Math.floor(Math.random()*9000)+1000)}</div><div class="res2">🫒 زيتوناتك: ${1+Math.floor(Math.random()*5)}</div><div class="res2">المستوى: ${['مبتدئ','متوسط','خبير','أسطورة'][Math.floor(Math.random()*4)]}</div><div class="res2">ترتيبك: ${100+Math.floor(Math.random()*800)} من ٩٩٩</div><div class="row fake2"><button style="background:#ff00cc">عرض التفاصيل</button><button style="background:#00e5ff">الإنجازات 🏆</button></div><div id="camp"><svg viewBox="0 0 250 30">${g}<rect x="208" y="10" width="34" height="18" fill="#0f0"/>${d}</svg></div>`;
+ document.querySelectorAll('.fake2 button').forEach(b=>b.onclick=()=>{clicks++;beep();});
+ document.getElementById('ok').style.display='none';
+ window.scrollTo(0,document.body.scrollHeight);
+}
+(function(){
+ const col=['#ff00cc','#00e5ff','#ffee00','#00ff66','#ff5500','#7a00ff'];
+ const sym=['💧','☁','☀','❄','⛺','🫒','H₂O','≈'];
+ let h='';
+ for(let k=0;k<40;k++){
+  const x=(k*37+11)%97,y=(k*53+7)%95,sz=34+(k*29)%70,c=col[k%6],sp=k%2?'':' class="spin"';
+  if(k%2===0)h+=`<b${sp} style="left:${x}%;top:${y}%;font-size:${sz+10}px;color:${c}">${sym[(k/2|0)%sym.length]}</b>`;
+  else if(k%4===1)h+=`<i${sp} style="left:${x}%;top:${y}%;width:${sz}px;height:${sz}px;border-radius:50%;background:${c}"></i>`;
+  else h+=`<i${sp} style="left:${x}%;top:${y}%;width:0;height:0;border-left:${sz/2}px solid transparent;border-right:${sz/2}px solid transparent;border-bottom:${sz}px solid ${c}"></i>`;
+ }
+ document.getElementById('bgs').innerHTML=h;
+})();
+</script>
+</template>
+
+<script>
+document.documentElement.lang='ar';document.documentElement.dir='rtl';
+const $=s=>document.querySelector(s);
+const toAr=n=>String(n).replace(/\d/g,d=>'٠١٢٣٤٥٦٧٨٩'[d]);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const LET=['أ','ب','جـ','د','هـ','و'];
+const REDUCE=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ================= ACTIVITIES ================= */
+const TYPE={mcq:'اختيار من متعدد',exp:'تجربة ومحاكاة',tf:'صح أم خطأ',order:'ترتيب',sort:'تصنيف',label:'تسمية المخطط',fill:'إكمال الفراغ',match:'توصيل',multi:'اختيار متعدد'};
+const STAGE={evap:'التبخّر',cond:'التكاثف',prec:'الهطول',coll:'التجمّع',all:'الدورة كاملة'};
+const ACTS=[
+{stage:'all',tag:'☀️ مصدر الطاقة',type:'mcq',bloom:'تذكّر',
+ story:'مرحباً، أنا «قطّورة»! أعيش في بحر غزة. كل صباح تشرق عليّ أشعة دافئة، فتبدأ رحلتي الكبيرة. هل تعرفون من يبدأ رحلتي؟',
+ q:'ما الذي يُسخّن ماء البحار والأنهار ويُحرّك دورة المياه في الطبيعة؟',
+ o:['الرياح','الشمس','القمر','الغيوم'],c:1,
+ hint:'فكّروا: ما الذي يجعل سطح البيت ساخناً في أيام الصيف؟',
+ fact:'حرارة الشمس هي المحرّك الأول لدورة المياه. وهي نفسها التي تُنضج ثمار الزيتون في سهول فلسطين وجبالها.'},
+{stage:'evap',tag:'💨 التبخّر',type:'exp',bloom:'تحليل',
+ story:'دفّأتني الشمس فصرت بخاراً خفيفاً لا يُرى وطِرتُ في الهواء! الشيء نفسه يحدث لماء الغسيل على سطح بيتكم. جرّبوا بأنفسكم.',
+ q:'غيّروا حرارة الشمس والرياح، وجرّبوا مرّتين على الأقل. ثم أجيبوا: أيّ الظروف تجعل الغسيل يجفّ أسرع؟',
+ o:['شمس ضعيفة بلا رياح','شمس قوية مع رياح','شمس متوسطة بلا رياح','الظروف لا تغيّر سرعة الجفاف'],c:1,
+ hint:'انظروا إلى جدول التجارب: في أيّ تجربة كان زمن الجفاف أقصر؟ وإن لم تجرّبوا ذلك بعد، فجرّبوا الشمس القوية مع الرياح.',
+ fact:'يزداد التبخّر كلما زادت الحرارة والرياح. لذلك يتكوّن الملح على شواطئ البحر الميت في الصيف: يتبخّر الماء ويبقى الملح.'},
+{stage:'cond',tag:'☁️ التكاثف',type:'mcq',bloom:'فهم',
+ story:'صعدتُ عالياً حيث الهواء بارد جداً، فبرَدتُ وتحوّلتُ من بخار إلى قطرة صغيرة من جديد. يحدث هذا في مطبخكم أيضاً!',
+ q:'أخرج سامي زجاجة ماء باردة من الثلاجة، فظهرت قطرات ماء على سطحها من الخارج. من أين جاءت هذه القطرات؟',
+ o:['تسرّبت من داخل الزجاجة','من بخار الماء في الهواء الذي تكاثف على سطحها البارد','من ذوبان الزجاج','سقطت من سقف المطبخ'],c:1,
+ hint:'الزجاجة مغلقة جيداً. فكّروا في الهواء المحيط بها: ماذا يحمل الهواء دائماً؟',
+ fact:'بالطريقة نفسها يتكوّن الندى على أوراق الزيتون في الصباح الباكر: يتكاثف بخار الماء على الأسطح الباردة.'},
+{stage:'cond',tag:'☁️ التكاثف',type:'tf',bloom:'فهم',
+ story:'تجمّعتُ مع ملايين القطرات الصغيرة فصرنا غيمة بيضاء كبيرة. لكن انتبهوا، فهناك أفكار خاطئة كثيرة عن الغيوم!',
+ q:'احكموا على كل عبارة: صحيحة أم خاطئة؟',
+ items:[['الغيمة مكوّنة من بخار ماء لا يُرى.',false,'الغيمة قطرات ماء صغيرة جداً أو بلّورات جليد، ولهذا نراها. أما بخار الماء فلا يُرى.'],
+        ['يتكوّن الندى على أوراق الزيتون في الصباح بسبب التكاثف.',true,'يبرد ورق الشجر في الليل، فيتكاثف عليه بخار الماء.'],
+        ['يحتاج بخار الماء إلى هواء بارد أو سطح بارد حتى يتكاثف.',true,'التبريد هو ما يحوّل البخار (غاز) إلى قطرات (سائل).']],
+ hint:'تذكّروا: هل يمكن أن نرى بخار الماء بأعيننا؟ إذا كنّا نرى الغيمة، فممّ تتكوّن إذن؟',
+ fact:'تعبر الغيوم القادمة من البحر المتوسط جبال فلسطين، فتبرد فوق المرتفعات ويزداد تكاثفها، ولهذا تُمطر جبال نابلس والخليل أكثر من الأغوار.'},
+{stage:'prec',tag:'🌧️ الهطول',type:'label',bloom:'تذكّر',
+ story:'ثقُلتُ أنا وأخواتي القطرات، فلم تعد الغيمة تحملنا، فسقطنا مطراً على جبال فلسطين! ساعدوني في تسمية محطّات رحلتي.',
+ q:'سمّوا المراحل على المخطط: اختاروا كلمة، ثم اختاروا الحرف الذي يناسبها.',
+ words:['تبخّر','تكاثف','هطول','تجمّع'],ans:[2,1,0,3],
+ hint:'ابدؤوا بالسهل: السهم الذي يصعد من البحر هو أوّل محطّة. والمطر النازل من الغيمة محطّة أخرى.',
+ fact:'يهطل معظم المطر في فلسطين بين تشرين الأول وآذار. وينتظر المزارعون «مطر الوسم» الأول لأنه يغسل غبار الصيف عن أشجار الزيتون.'},
+{stage:'all',tag:'❄️ حالات الماء',type:'sort',bloom:'فهم',
+ story:'أنا قطرة واحدة، لكني أغيّر شكلي: أكون ثلجاً، ثم ماءً، ثم بخاراً. هل تعرفونني في كل أشكالي؟',
+ q:'صنّفوا الأمثلة حسب حالة الماء فيها: اختاروا بطاقة، ثم اختاروا الحالة.',
+ bins:['صلبة ❄️','سائلة 💧','غازية 💨'],
+ items:[['ثلج على جبال الخليل',0],['ماء نبع الفوّار',1],['بخار الماء في هواء الغرفة',2],['مكعّبات الجليد في كأس العصير',0],['قطرات الندى على ورق الزيتون',1],['بخار الماء الصاعد من البحر',2]],
+ hint:'الحالة الغازية لا تُرى بالعين، والحالة الصلبة لها شكل ثابت.',
+ fact:'للماء ثلاث حالات: صلبة وسائلة وغازية. وتتساقط الثلوج على جبال الخليل والقدس في بعض سنوات الشتاء الباردة.'},
+{stage:'coll',tag:'🏞️ التجمّع',type:'fill',bloom:'فهم',
+ story:'بعد أن سقطتُ على الجبل جريتُ مع الماء، ثم اختبأتُ تحت الأرض زمناً طويلاً، حتى خرجتُ من نبع ماء بارد!',
+ q:'أكملوا الفقرة بالكلمات المناسبة: اختاروا كلمة فتنتقل إلى أوّل فراغ. وانقروا على أيّ فراغ لتفريغه.',
+ parts:['بعد الهطول يجري جزء من الماء في ',0,' حتى يصل إلى البحر، ويتسرّب جزء آخر في التربة فيكوّن المياه ',1,' التي تخرج من ',2,' مثل عين السلطان في أريحا.'],
+ bank:['الغيوم','الأودية','المالحة','الجوفية','الينابيع'],ans:[1,3,4],
+ hint:'كلمتان في البنك لا مكان لهما. فكّروا: من أين يحصل أهل القرية على الماء العذب من باطن الأرض؟',
+ fact:'كان أجدادنا يحفرون آبار جمع المطر تحت البيوت، وما زالت تُستخدم في قرى كثيرة لسقي المزروعات في الصيف.'},
+{stage:'all',tag:'🫒 شجرة الزيتون',type:'match',bloom:'تطبيق',
+ story:'شربت جذور شجرة زيتون في الجبل من ماء المطر، فدخلتُ الشجرة وصعدتُ إلى أوراقها. شجرة الزيتون تعيش دورة المياه كلها!',
+ q:'صِلوا كل ما يحدث لشجرة الزيتون بالمرحلة المناسبة: اختاروا عبارة، ثم اختاروا المرحلة.',
+ left:['أوراق الزيتون تُطلق بخار الماء إلى الهواء','مطر الشتاء يسقي أشجار الزيتون في الجبال','قطرات صغيرة على ورق الزيتون في الصباح الباكر','شمس الصيف تُجفّف التربة حول جذع الشجرة'],
+ right:['التكاثف','النتح','التبخّر','الهطول'],ans:[1,3,0,2],
+ hint:'هناك مرحلة جديدة خاصة بالنبات: خروج بخار الماء من الأوراق اسمه «النتح».',
+ fact:'تعتمد معظم أشجار الزيتون في جبال فلسطين على المطر وحده دون ريّ، وتُسمّى هذه الزراعة «البعلية». وفي موسم القطاف تتعاون العائلات في «العونة» وتجمع الحبات على الكوفية والمفرش.'},
+{stage:'all',tag:'🔄 ترتيب الدورة',type:'order',bloom:'فهم',
+ story:'وصلتُ إلى البحر من جديد! هل لاحظتم؟ رحلتي لا تنتهي، بل تبدأ من جديد. رتّبوها لأحكيها لأصدقائي.',
+ q:'رتّبوا مراحل الرحلة من البداية: انقروا البطاقات بالترتيب الصحيح.',
+ items:['يتبخّر ماء البحر بحرارة الشمس','يتكاثف البخار في الجو البارد فتتكوّن الغيوم','يهطل المطر على الجبال','يتجمّع الماء في الأودية والبحر وباطن الأرض'],perm:[2,0,3,1],
+ hint:'ابدؤوا بما تفعله الشمس، وانتهوا بالمكان الذي تعود إليه القطرة.',
+ fact:'تتكرّر الدورة دون توقّف، فالماء الذي نشربه اليوم يدور في الطبيعة منذ آلاف السنين، وكميّته على الأرض تبقى ثابتة تقريباً.'},
+{stage:'coll',tag:'🪣 المحافظة على الماء',type:'multi',bloom:'تقويم',
+ story:'أنا قطرة ثمينة! الماء في بلادنا قليل، وكل قطرة لها قيمة. ساعدوني لأبقى في الأرض ولا أضيع.',
+ q:'اختاروا كل السلوكيات التي تحافظ على الماء، ثم تحقّقوا.',
+ o:['إغلاق الصنبور أثناء تنظيف الأسنان','سقي الأشجار وقت الظهيرة الحارّة','جمع ماء المطر عن سطح البيت في بئر','غسل ساحة البيت بالخرطوم كل يوم','سقي المزروعات في الصباح الباكر أو المساء','ترك الصنبور يقطر طوال الليل'],c:[0,2,4],
+ hint:'تذكّروا تجربة الغسيل: متى يتبخّر الماء أسرع؟ ماذا يحدث لماء السقي إذا سقينا وقت الظهيرة؟',
+ fact:'السقي في الصباح الباكر أو المساء يقلّل ضياع الماء بالتبخّر، فتصل كمية أكبر منه إلى جذور الشجرة.'}
+];
+
+const VID='media/qatroura.mp4',POSTER='media/qatroura-poster.jpg';
+const CHAP=[['البداية',0,10],['١. التبخّر',10,19],['٢. التكاثف',19,31],['٣. الهطول',31,41],['٤. الجريان والتجمّع',41,53],['كل قطرة ثمينة',53,65]];
+const CLIP=[1,1,2,2,3,null,4,null,[10,53,'الدورة كاملة'],5]; // per activity: chapter index or [start,end,name]
+function clipOf(k){const c=CLIP[k];if(c===null)return null;return Array.isArray(c)?c:[CHAP[c][1],CHAP[c][2],CHAP[c][0]];}
+const mmss=t=>'<bdi dir="ltr">'+toAr(Math.floor(t/60)+':'+String(t%60).padStart(2,'0'))+'</bdi>';
+let clipEnd=null;
+function openClip(s,e,name){const m=$('#vmodal'),v=$('#clipVid');$('#vmt').textContent='🎬 '+name;m.hidden=false;clipEnd=e;
+ const go=()=>{try{v.currentTime=s;}catch(_){}v.play().catch(()=>{});};
+ if(v.readyState>=1)go();else{v.preload='auto';v.addEventListener('loadedmetadata',go,{once:true});v.load();}
+ m.querySelector('[data-x=vclose]').focus();}
+function closeClip(){const m=$('#vmodal');if(m.hidden)return;m.hidden=true;$('#clipVid').pause();}
+function videoBlock(cap){return `<figure class="vid"><video id="introVid" src="${VID}" poster="${POSTER}" controls preload="metadata" playsinline></video><figcaption>${cap}</figcaption><div class="chap" role="group" aria-label="فصول الفيديو">${CHAP.map(c=>`<button data-x="seek" data-t="${c[1]}">${c[0]} <small>${mmss(c[1])}</small></button>`).join('')}</div></figure>`;}
+
+/* ================= SOUND ================= */
+let ac=null,muted=false;
+function tone(f,s,d,t,v){const o=ac.createOscillator(),g=ac.createGain();o.type=t;o.frequency.setValueAtTime(f,s);g.gain.setValueAtTime(v,s);g.gain.exponentialRampToValueAtTime(.001,s+d);o.connect(g);g.connect(ac.destination);o.start(s);o.stop(s+d);}
+function snd(t){if(muted)return;try{ac=ac||new(window.AudioContext||window.webkitAudioContext)();if(ac.state==='suspended')ac.resume();const n=ac.currentTime;
+ if(t==='ok')[523.25,659.25,783.99].forEach((f,i)=>tone(f,n+i*.1,.3,'triangle',.18));
+ else if(t==='olive'){[523.25,659.25,783.99].forEach((f,i)=>tone(f,n+i*.1,.3,'triangle',.18));tone(1046.5,n+.42,.18,'sine',.16);tone(1318.5,n+.52,.25,'sine',.14);}
+ else if(t==='try')tone(330,n,.25,'sine',.16);
+ else if(t==='no'){tone(220,n,.22,'sine',.2);tone(174.6,n+.18,.3,'sine',.2);}
+ else if(t==='win')[523.25,659.25,783.99,1046.5,783.99,1046.5].forEach((f,i)=>tone(f,n+i*.14,.32,'triangle',.18));
+}catch(e){}}
+
+/* ================= VILLAGE SCENE ================= */
+const OLIVES=[{bx:78,by:74,kx:68,ky:185},{bx:112,by:56,kx:88,ky:187},{bx:152,by:68,kx:108,ky:184},{bx:176,by:96,kx:128,ky:188},{bx:64,by:104,kx:148,ky:185},{bx:96,by:95,kx:168,ky:187},{bx:134,by:92,kx:80,ky:199},{bx:162,by:114,kx:104,ky:201},{bx:118,by:115,kx:132,ky:200},{bx:85,by:120,kx:156,ky:199}];
+function slotSVG(k){const col=k%5,row=k/5|0,x=140+(4-col)*44,y=70+row*58;
+ return `<g transform="translate(${x},${y}) scale(.72)"><g class="slot" id="slot${k}"><rect x="3" y="54" width="54" height="4" rx="2" fill="#c7b183"/>
+ <g class="tent"><line x1="30" y1="14" x2="30" y2="4" stroke="#7a5418" stroke-width="2"/><polygon points="30,4 39,7 30,10" fill="#c4502f"/><polygon points="6,54 30,13 54,54" fill="#dfa648" stroke="#a8731f" stroke-width="1.5" stroke-linejoin="round"/><polygon points="23,54 30,32 37,54" fill="#6b4a1a"/></g>
+ <g class="house"><rect x="38" y="13" width="6" height="12" fill="#9c3d22"/><rect x="11" y="28" width="38" height="26" fill="#f6e7c8" stroke="#b89b6a" stroke-width="1.2"/><polygon points="6,30 30,9 54,30" fill="#c4502f" stroke="#9c3d22" stroke-width="1.2" stroke-linejoin="round"/><rect x="26" y="39" width="9" height="15" rx="1" fill="#7a4b2a"/><rect x="15" y="34" width="8" height="8" fill="#9fd3ea" stroke="#b89b6a"/><rect x="38" y="34" width="8" height="8" fill="#9fd3ea" stroke="#b89b6a"/></g></g></g>`;}
+function treeSVG(){let ol='';OLIVES.forEach((o,k)=>{ol+=`<g id="ol${k}" class="olive-drop"><ellipse cx="${o.bx}" cy="${o.by}" rx="5.5" ry="7.5" fill="#1a2e05" stroke="#365314"/><ellipse cx="${o.bx-1.8}" cy="${o.by-2.4}" rx="1.6" ry="2.6" fill="#84cc16" opacity=".55"/><path d="M${o.bx} ${o.by-7.5} Q${o.bx+3} ${o.by-11} ${o.bx+5} ${o.by-9}" fill="none" stroke="#365314" stroke-width="1.2" stroke-linecap="round"/></g>`;});
+ return `<defs><pattern id="kef" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#fff"/><path d="M0 0 L12 12 M12 0 L0 12" stroke="#1e293b" stroke-width="1.15" opacity=".72"/><rect x="4.5" y="4.5" width="3" height="3" transform="rotate(45 6 6)" fill="#0f172a" opacity=".82"/></pattern></defs>
+ <g transform="translate(0,62) scale(.55)">
+ <path d="M108 182 Q112 145 104 122 Q92 104 75 96 M124 182 Q122 142 132 118 Q148 102 165 95 M116 142 Q118 115 118 92" fill="none" stroke="#78350f" stroke-width="9" stroke-linecap="round"/>
+ <path d="M102 184 Q116 174 134 184 L129 144 Q118 136 108 144 Z" fill="#78350f"/>
+ <circle cx="84" cy="96" r="34" fill="#3f6212"/><circle cx="154" cy="94" r="35" fill="#3f6212"/><circle cx="120" cy="68" r="40" fill="#4d7c0f"/><circle cx="74" cy="78" r="24" fill="#4d7c0f"/><circle cx="164" cy="76" r="25" fill="#4d7c0f"/><circle cx="102" cy="94" r="32" fill="#65a30d" opacity=".85"/><circle cx="140" cy="90" r="30" fill="#65a30d" opacity=".8"/><circle cx="120" cy="62" r="28" fill="#84cc16" opacity=".4"/>
+ <polygon points="48,179 192,179 206,214 34,214" fill="#0f172a" opacity=".14"/>
+ <polygon points="48,176 192,176 206,211 34,211" fill="url(#kef)" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/>
+ <polygon points="52,180 188,180 199,207 41,207" fill="none" stroke="#0f172a" stroke-width="1.4" stroke-dasharray="4 2"/>
+ <path d="M46 180 L38 182 M44 187 L35 189 M41 194 L32 196 M39 201 L30 203 M36 208 L27 210 M194 180 L202 182 M196 187 L205 189 M199 194 L208 196 M201 201 L210 203 M204 208 L213 210" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/>
+ ${ol}</g>`;}
+function buildVillage(){
+ $('#vscene').innerHTML=`<rect width="360" height="210" style="fill:var(--sky)"/>
+ <g fill="#f2b632"><circle cx="330" cy="28" r="13"/></g><g stroke="#f2b632" stroke-width="2" stroke-linecap="round"><path d="M330 8v-5M330 53v-5M310 28h-5M355 28h-5M316 14l-3-3M347 45l-3-3M344 14l3-3M313 45l3-3"/></g>
+ <g fill="#fff" opacity=".9"><ellipse cx="200" cy="30" rx="22" ry="9"/><ellipse cx="216" cy="24" rx="14" ry="9"/></g>
+ <path d="M0,176 Q90,160 180,172 T360,168 V210 H0Z" style="fill:var(--ground)"/>
+ <g id="vflag" transform="translate(0,0)"><line x1="352" y1="70" x2="352" y2="40" stroke="#4a3a2a" stroke-width="2"/></g>
+ ${treeSVG()}${Array.from({length:10},(_,k)=>slotSVG(k)).join('')}`;
+ $('#vflag').innerHTML=`<line x1="352" y1="176" x2="352" y2="52" stroke="#4a3a2a" stroke-width="2"/><g transform="translate(330,52)"><rect width="22" height="4.5" fill="#141414"/><rect y="4.5" width="22" height="4.5" fill="#fff"/><rect y="9" width="22" height="4.5" fill="#007a3d"/><polygon points="22,0 14,6.75 22,13.5" fill="#ce1126"/></g>`;
+}
+function updateVillage(){
+ const h=G.res.filter(r=>r==='olive'||r==='house').length,o=G.res.filter(r=>r==='olive').length;
+ for(let k=0;k<10;k++){$('#slot'+k).classList.toggle('built',k<h);const el=$('#ol'+k),p=OLIVES[k];el.style.transform=k<o?`translate(${p.kx-p.bx}px,${p.ky-p.by}px)`:'translate(0px,0px)';}
+ $('#nh').textContent=toAr(h);$('#no').textContent=toAr(o);
+ $('#vflag').classList.toggle('up',h===10);
+ $('#vscene').setAttribute('aria-label',`قرية ${G.team}: ${toAr(h)} بيوت و${toAr(10-h)} خيام، و${toAr(o)} حبات زيتون على الكوفية`);
+ $('#vname').textContent='قرية '+G.team;
+}
+
+/* ================= DIAGRAM ================= */
+function pill(cx,cy,label,on){return `<g class="st${on?' on':''}"><rect x="${cx-30}" y="${cy-11}" width="60" height="22" rx="11"/><text x="${cx}" y="${cy+4}" text-anchor="middle">${label}</text></g>`;}
+const DPOS={prec:[44,58],cond:[196,20],evap:[282,108],coll:[128,160]};
+const DORDER=['prec','cond','evap','coll']; // letters أ ب جـ د on diagram
+function diagram(stage,labels){
+ const L=k=>labels?labels[DORDER.indexOf(k)]:{evap:'تبخّر',cond:'تكاثف',prec:'هطول',coll:'تجمّع'}[k];
+ return `<svg class="diag${stage&&stage!=='all'&&!labels?' focus':''}" viewBox="0 0 320 176" role="img" aria-label="مخطط دورة المياه">
+ <defs><marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#0e5a7a"/></marker></defs>
+ <rect x="0" y="0" width="320" height="176" rx="14" style="fill:var(--sky)"/>
+ <circle cx="288" cy="30" r="16" fill="#f2b632"/>
+ <path d="M168,142 Q188,135 208,142 T248,142 T288,142 T328,142 V176 H168Z" fill="#3a8fb7"/>
+ <polygon points="0,176 0,122 55,80 112,132 176,148 176,176" fill="#4a8f57"/>
+ <polygon points="44,90 55,80 66,90 58,88 52,92" fill="#fff"/>
+ <path d="M62,102 C82,126 120,136 178,150" stroke="#3a8fb7" stroke-width="4" fill="none" stroke-linecap="round"/>
+ <g stroke="#3a8fb7" stroke-width="2" fill="none" stroke-dasharray="4 3" marker-end="url(#ar)">
+ <path d="M200,134 C194,118 206,108 200,92"/><path d="M222,134 C216,118 228,108 222,92"/><path d="M244,134 C238,118 250,108 244,92"/><path d="M220,80 C200,58 178,48 162,46" stroke-dasharray="2 4"/></g>
+ <g fill="#fff" stroke="#a9cbd9" stroke-width="1.2"><ellipse cx="96" cy="46" rx="20" ry="14"/><ellipse cx="122" cy="38" rx="24" ry="18"/><ellipse cx="146" cy="48" rx="18" ry="12"/></g>
+ <ellipse cx="120" cy="50" rx="38" ry="10" fill="#fff"/>
+ <g stroke="#3a8fb7" stroke-width="2" stroke-linecap="round"><line x1="94" y1="66" x2="88" y2="84"/><line x1="108" y1="66" x2="102" y2="86"/><line x1="122" y1="66" x2="116" y2="84"/><line x1="136" y1="66" x2="130" y2="86"/></g>
+ ${Object.keys(DPOS).map(k=>pill(DPOS[k][0],DPOS[k][1],L(k),stage===k)).join('')}
+ </svg>`;}
+
+/* ================= DROP CHARACTER ================= */
+const DROP=`<svg viewBox="0 0 60 72" aria-hidden="true"><path d="M30 2 C30 2 6 32 6 46 a24 24 0 0 0 48 0 C54 32 30 2 30 2z" fill="#3a8fb7" stroke="#0e5a7a" stroke-width="1.5"/><ellipse cx="20" cy="38" rx="4" ry="8" fill="#fff" opacity=".45"/><circle cx="23" cy="48" r="3.2" fill="#0a2a3a"/><circle cx="37" cy="48" r="3.2" fill="#0a2a3a"/><circle cx="24" cy="47" r="1" fill="#fff"/><circle cx="38" cy="47" r="1" fill="#fff"/><path d="M23 56 q7 6 14 0" stroke="#0a2a3a" stroke-width="2.4" fill="none" stroke-linecap="round"/><circle cx="16" cy="55" r="3" fill="#f59aa0" opacity=".7"/><circle cx="44" cy="55" r="3" fill="#f59aa0" opacity=".7"/></svg>`;
+
+/* ================= GAME STATE ================= */
+const G={team:'فريق الصف الرابع',i:-1,res:[]};
+let S=null;
+const P=()=>$('#qpanel');
+function newS(a){S={attempt:1,done:false,sol:false,wrong:new Set(),sel:null};
+ if(a.type==='mcq')S.dis=[];
+ if(a.type==='exp'){S.dis=[];S.heat=1;S.wind=0;S.trials=[];S.running=false;}
+ if(a.type==='tf')S.ans=a.items.map(()=>null);
+ if(a.type==='order')S.seq=[];
+ if(a.type==='sort')S.place=a.items.map(()=>null);
+ if(a.type==='label')S.place=[null,null,null,null];
+ if(a.type==='fill')S.fill=a.ans.map(()=>null);
+ if(a.type==='match')S.pair=a.left.map(()=>null);
+ if(a.type==='multi')S.on=a.o.map(()=>false);
+}
+const NEEDS_CHECK=t=>!['mcq','exp'].includes(t);
+const HAS_RESET=t=>['order','sort','label','fill','match','tf','multi'].includes(t);
+function ready(a){switch(a.type){
+ case 'tf':return S.ans.every(v=>v!==null);
+ case 'order':return S.seq.length===a.items.length;
+ case 'sort':return S.place.every(v=>v!==null);
+ case 'label':return S.place.every(v=>v!==null);
+ case 'fill':return S.fill.every(v=>v!==null);
+ case 'match':return S.pair.every(v=>v!==null);
+ case 'multi':return S.on.some(Boolean);
+}return false;}
+const locked=()=>S.done;
+
+/* ---------- views ---------- */
+function mk(st){return st==='r'?'<span class="mk">✔</span>':st==='w'?'<span class="mk">✘</span>':'';}
+function optsView(a){
+ const expLock=a.type==='exp'&&distinctTrials()<2;
+ return `<div class="opts">${a.o.map((o,j)=>{let cls='',st='';
+  if(S.done){if(j===a.c){cls='right';st='r';}else if(j===S.pick){cls='wrong';st='w';}}
+  else if(S.dis.includes(j)){cls='wrong';st='w';}
+  const dis=S.done||S.dis.includes(j)||expLock;
+  return `<button class="opt ${cls}" data-x="opt" data-i="${j}" ${dis?'disabled':''}><span class="l">${LET[j]}</span><span>${o}</span>${mk(st)}</button>`;}).join('')}</div>`;}
+function distinctTrials(){return new Set(S.trials.map(t=>t.h+'-'+t.w)).size;}
+const HEAT=['ضعيفة 🌥️','متوسطة 🌤️','قوية ☀️'],WIND=['بلا رياح','رياح 🍃'];
+const dryMin=(h,w)=>Math.round(120/((h+1)*(w?1.5:1)));
+function expView(a){
+ const last=S.trials[S.trials.length-1],r=8+S.heat*4;
+ const best=S.trials.length?Math.min(...S.trials.map(t=>t.m)):null;
+ const cloth=(x,c)=>`<g transform="translate(${x},44)"><path d="M0 0 h34 l8 10 -7 6 -4 -4 v30 h-28 v-30 l-4 4 -7 -6z" fill="${c}"/><path class="wet" d="M0 0 h34 l8 10 -7 6 -4 -4 v30 h-28 v-30 l-4 4 -7 -6z" fill="#0e5a7a" opacity="${S.trials.length&&!S.running?0:.45}"/></g>`;
+ return `<div class="lab"><svg class="labsvg" viewBox="0 0 300 120" role="img" aria-label="غسيل منشور على حبل تحت الشمس">
+ <rect width="300" height="120" rx="12" style="fill:var(--sky)"/>
+ <circle cx="40" cy="26" r="${r}" fill="#f2b632"/>${S.heat>=1?`<g stroke="#f2b632" stroke-width="2" stroke-linecap="round"><path d="M40 ${26-r-4}v-5M40 ${26+r+4}v5M${40-r-4} 26h-5M${40+r+4} 26h5"/></g>`:''}
+ ${S.wind?'<g stroke="#7aa6b8" stroke-width="2" fill="none" stroke-linecap="round"><path d="M250 30 q-20 -6 -40 0"/><path d="M262 44 q-24 -6 -48 0"/><path d="M246 58 q-18 -5 -36 0"/></g>':''}
+ <line x1="70" y1="106" x2="70" y2="36" stroke="#7a5418" stroke-width="3"/><line x1="270" y1="106" x2="270" y2="36" stroke="#7a5418" stroke-width="3"/>
+ <path d="M70 40 Q170 50 270 40" stroke="#5b5348" stroke-width="1.5" fill="none"/>
+ ${cloth(92,'#ce1126')}${cloth(150,'#f6e7c8')}${cloth(208,'#007a3d')}
+ <g id="vap" fill="none" stroke="#3a8fb7" stroke-width="2" stroke-linecap="round" opacity="0"><path d="M112 40 q-4 -8 0 -14 q4 -6 0 -12"/><path d="M170 40 q-4 -8 0 -14 q4 -6 0 -12"/><path d="M228 40 q-4 -8 0 -14 q4 -6 0 -12"/></g>
+ <rect x="0" y="106" width="300" height="14" rx="0" style="fill:var(--ground)"/>
+ </svg>
+ <div class="ctrls">
+ <div class="grp" role="group" aria-label="حرارة الشمس"><span>حرارة الشمس</span>${HEAT.map((t,k)=>`<button class="seg-b" data-x="heat" data-i="${k}" aria-pressed="${S.heat===k}" ${S.running||S.done?'disabled':''}>${t}</button>`).join('')}</div>
+ <div class="grp" role="group" aria-label="الرياح"><span>الرياح</span>${WIND.map((t,k)=>`<button class="seg-b" data-x="wind" data-i="${k}" aria-pressed="${S.wind===k}" ${S.running||S.done?'disabled':''}>${t}</button>`).join('')}</div>
+ <button class="btn" data-x="run" ${S.running||S.done?'disabled':''}>${S.running?'يجفّ الغسيل…':'انشروا الغسيل ▶'}</button>
+ </div>
+ ${S.trials.length?`<div class="tblwrap"><table class="trials"><thead><tr><th>التجربة</th><th>حرارة الشمس</th><th>الرياح</th><th>زمن الجفاف</th></tr></thead><tbody>${S.trials.map((t,k)=>`<tr><td>${toAr(k+1)}</td><td>${HEAT[t.h]}</td><td>${WIND[t.w]}</td><td class="${t.m===best?'fast':''}">${toAr(t.m)} دقيقة</td></tr>`).join('')}</tbody></table></div>`:''}
+ ${distinctTrials()<2&&!S.done?`<p class="lock">🔒 تُفتح الإجابات بعد تجربتين بظروف مختلفة (${toAr(distinctTrials())} من ٢)</p>`:''}
+ </div>${optsView(a)}`;}
+function tfView(a){return `<div class="tfl">${a.items.map((it,k)=>{
+ const v=S.ans[k],cls=S.done?(v===it[1]||S.sol?'right':'wrong'):(S.wrong.has(k)?'wrong':'');
+ return `<div class="tfr ${cls}"><p>${it[0]}</p><div class="tfb" role="group" aria-label="العبارة ${toAr(k+1)}"><button class="seg-b" data-x="tf" data-i="${k}" data-v="1" aria-pressed="${v===true}" ${locked()?'disabled':''}>✔ صح</button><button class="seg-b" data-x="tf" data-i="${k}" data-v="0" aria-pressed="${v===false}" ${locked()?'disabled':''}>✘ خطأ</button></div>${S.done?`<div class="why">${it[1]?'العبارة صحيحة: ':'العبارة خاطئة: '}${it[2]}</div>`:''}</div>`;}).join('')}</div>`;}
+function orderView(a){
+ const pool=a.perm.filter(k=>!S.seq.includes(k));
+ return `<div class="pool">${pool.map(k=>`<button class="card2" data-x="ord" data-i="${k}" ${locked()?'disabled':''}>${a.items[k]}</button>`).join('')}</div>
+ <ol class="seqlist">${a.items.map((_,p)=>{const k=S.seq[p];
+  if(k===undefined)return `<li><span class="n">${toAr(p+1)}</span><span class="empty">المرحلة ${toAr(p+1)}</span></li>`;
+  const cls=S.done?(k===p?'right':'wrong'):(S.wrong.has(p)?'wrong':'');
+  return `<li><span class="n">${toAr(p+1)}</span><button class="card2 ${cls}" data-x="unord" data-i="${p}" ${locked()?'disabled':''} title="انقروا لإرجاعها">${a.items[k]}</button></li>`;}).join('')}</ol>`;}
+function sortView(a){
+ const chip=(k)=>{const cls=(S.sel===k?'sel ':'')+(S.done?(S.place[k]===a.items[k][1]?'right':'wrong'):(S.wrong.has(k)?'wrong':''));
+  return `<button class="card2 ${cls}" data-x="sitem" data-i="${k}" ${locked()?'disabled':''}>${a.items[k][0]}</button>`;};
+ return `<div class="pool">${a.items.map((_,k)=>S.place[k]===null?chip(k):'').join('')}</div>
+ <div class="bins">${a.bins.map((b,j)=>`<div class="bin ${S.sel!==null?'ready':''}"><button class="bh" data-x="sbin" data-i="${j}" ${locked()?'disabled':''}>${b}</button>${a.items.map((_,k)=>S.place[k]===j?chip(k):'').join('')}</div>`).join('')}</div>`;}
+function labelView(a){
+ const used=S.place.filter(v=>v!==null);
+ const labels=DORDER.map((_,s)=>S.place[s]!==null?a.words[S.place[s]]:LET[s]);
+ return `${diagram(null,labels)}
+ <div class="pool">${a.words.map((w,j)=>used.includes(j)?'':`<button class="card2 ${S.sel===j?'sel':''}" data-x="lword" data-i="${j}" ${locked()?'disabled':''}>${w}</button>`).join('')}</div>
+ <div class="slots">${DORDER.map((_,s)=>{const v=S.place[s];const cls=S.done?(v===a.ans[s]?'right':'wrong'):(S.wrong.has(s)?'wrong':'');
+  return `<button class="slotb ${v!==null?'filled':''} ${cls}" data-x="lslot" data-i="${s}" ${locked()?'disabled':''}><span class="lt">${LET[s]}</span><span>${v!==null?a.words[v]:'<span style="color:var(--muted);font-weight:700">اختاروا كلمة ثم انقروا هنا</span>'}</span></button>`;}).join('')}</div>`;}
+function fillView(a){
+ const used=S.fill.filter(v=>v!==null);
+ return `<div class="sent">${a.parts.map(p=>{if(typeof p==='string')return p;const v=S.fill[p];
+  const cls=S.done?(v===a.ans[p]?'right':'wrong'):(S.wrong.has(p)?'wrong':'');
+  return `<button class="blank ${v!==null?'filled':''} ${cls}" data-x="fblank" data-i="${p}" ${locked()?'disabled':''} aria-label="الفراغ ${toAr(p+1)}">${v!==null?a.bank[v]:'…………'}</button>`;}).join('')}</div>
+ <div class="pool">${a.bank.map((w,j)=>used.includes(j)?'':`<button class="card2" data-x="fword" data-i="${j}" ${locked()?'disabled':''}>${w}</button>`).join('')}</div>`;}
+function matchView(a){
+ return `<div class="match"><div class="col">${a.left.map((t,k)=>{const p=S.pair[k];
+  const cls=(S.sel===k?'sel ':'')+(p!==null?'pair'+k+' ':'')+(S.done?(p===a.ans[k]?'right':'wrong'):(S.wrong.has(k)?'wrong':''));
+  return `<button class="card2 ${cls}" data-x="ml" data-i="${k}" ${locked()?'disabled':''}><span class="row"><span>${t}</span>${p!==null?`<span class="pb p${k}">${toAr(k+1)}</span>`:''}</span></button>`;}).join('')}</div>
+ <div class="col">${a.right.map((t,j)=>{const ks=S.pair.map((p,k)=>p===j?k:-1).filter(k=>k>=0);
+  return `<button class="card2" data-x="mr" data-i="${j}" ${locked()?'disabled':''}><span class="row"><span>${t}</span><span>${ks.map(k=>`<span class="pb p${k}">${toAr(k+1)}</span>`).join('')}</span></span></button>`;}).join('')}</div></div>`;}
+function multiView(a){
+ return `<div class="mlist">${a.o.map((o,j)=>{const on=S.on[j],corr=a.c.includes(j);
+  const cls=S.done?(corr?(on||S.sol?'right':''):(on?'wrong':'')):(S.wrong.has(j)?'wrong':'');
+  return `<button class="chk ${cls}" data-x="mul" data-i="${j}" aria-pressed="${on}" ${locked()?'disabled':''}><span class="bx">${on?'✓':''}</span><span>${o}</span>${S.done&&corr?'<span class="mk">✔</span>':''}${S.done&&!corr&&on?'<span class="mk">✘</span>':''}</button>`;}).join('')}</div>
+ <p class="inst" style="margin-top:8px">اخترتم ${toAr(S.on.filter(Boolean).length)} من ${toAr(a.o.length)}</p>`;}
+const VIEW={mcq:optsView,exp:expView,tf:tfView,order:orderView,sort:sortView,label:labelView,fill:fillView,match:matchView,multi:multiView};
+
+/* ---------- render ---------- */
+function segClass(k){if(G.res[k])return G.res[k];return k===G.i?'cur':'';}
+function renderAct(){
+ const a=ACTS[G.i];newS(a);
+ P().innerHTML=`<div class="qhead"><span class="chip">${a.tag}</span><span class="tbadge">${TYPE[a.type]}</span><span class="count">النشاط ${toAr(G.i+1)} من ${toAr(ACTS.length)}</span></div>
+ <ol class="seg" id="seg" aria-hidden="true"></ol>
+ <div class="droprow"><div class="drop" id="drop">${DROP}</div><p class="bubble">${a.story}</p></div>
+ ${a.type!=='label'&&a.type!=='exp'&&a.stage!=='all'?diagram(a.stage):''}
+ <h3 class="qtext">${a.q}</h3>
+ <div id="abody"></div>
+ <div id="fb" class="fb" hidden></div>
+ <div class="fact" id="fact" hidden>${a.fact}</div>
+ <div class="actions"><button class="btn ghost" id="resetBtn" data-x="reset" hidden>مسح الإجابة</button><button class="btn" id="checkBtn" data-x="check" hidden>تحقّقوا من الإجابة</button><button class="btn" id="nextBtn" data-x="next" hidden>${G.i===ACTS.length-1?'عرض نتيجة القرية 🏡':'النشاط التالي ⬅'}</button></div>`;
+ drawSeg();drawBody();
+}
+function drawSeg(){$('#seg').innerHTML=ACTS.map((_,k)=>`<li class="${segClass(k)}"></li>`).join('');}
+function drawBody(){
+ const a=ACTS[G.i];$('#abody').innerHTML=VIEW[a.type](a);
+ const cb=$('#checkBtn'),rb=$('#resetBtn');
+ cb.hidden=!NEEDS_CHECK(a.type)||S.done;cb.disabled=!ready(a);
+ rb.hidden=!HAS_RESET(a.type)||S.done;
+}
+function feedback(cls,html){const f=$('#fb');f.className='fb '+cls;f.innerHTML=html;f.hidden=false;}
+function dropMood(m){const d=$('#drop');d.classList.remove('hop','sad');void d.offsetWidth;d.classList.add(m);}
+
+/* ---------- checking ---------- */
+function evaluate(a){ // returns {ok, wrong:Set, extra:''}
+ const w=new Set();let extra='';
+ switch(a.type){
+  case 'tf':a.items.forEach((it,k)=>{if(S.ans[k]!==it[1])w.add(k)});extra=`عبارات صحيحة الحكم: ${toAr(a.items.length-w.size)} من ${toAr(a.items.length)}.`;break;
+  case 'order':S.seq.forEach((k,p)=>{if(k!==p)w.add(p)});extra=`في مكانها الصحيح: ${toAr(a.items.length-w.size)} من ${toAr(a.items.length)}.`;break;
+  case 'sort':a.items.forEach((it,k)=>{if(S.place[k]!==it[1])w.add(k)});extra=`البطاقات المعلَّمة بالأحمر في غير مكانها (${toAr(w.size)}).`;break;
+  case 'label':S.place.forEach((v,s)=>{if(v!==a.ans[s])w.add(s)});extra=`أسماء صحيحة: ${toAr(4-w.size)} من ٤.`;break;
+  case 'fill':S.fill.forEach((v,b)=>{if(v!==a.ans[b])w.add(b)});extra=`فراغات صحيحة: ${toAr(a.ans.length-w.size)} من ${toAr(a.ans.length)}.`;break;
+  case 'match':S.pair.forEach((v,k)=>{if(v!==a.ans[k])w.add(k)});extra=`توصيلات صحيحة: ${toAr(a.left.length-w.size)} من ${toAr(a.left.length)}.`;break;
+  case 'multi':{let good=0,bad=0;S.on.forEach((v,j)=>{if(v&&a.c.includes(j))good++;if(v!==a.c.includes(j))w.add(j);if(v&&!a.c.includes(j))bad++;});
+   extra=`اخترتم ${toAr(good)} سلوكيات صحيحة${bad?` و${toAr(bad)} غير صحيحة`:''}، والمطلوب ${toAr(a.c.length)} سلوكيات صحيحة.`;
+   if(a.type==='multi')w.forEach(j=>{if(!S.on[j])w.delete(j)});break;}
+ }
+ const ok=a.type==='multi'?S.on.every((v,j)=>v===a.c.includes(j)):w.size===0;
+ return {ok,wrong:w,extra};
+}
+function solve(a){S.sol=true;switch(a.type){
+ case 'tf':S.ans=a.items.map(it=>it[1]);break;
+ case 'order':S.seq=a.items.map((_,k)=>k);break;
+ case 'sort':S.place=a.items.map(it=>it[1]);break;
+ case 'label':S.place=a.ans.slice();break;
+ case 'fill':S.fill=a.ans.slice();break;
+ case 'match':S.pair=a.ans.slice();break;
+ case 'multi':S.on=a.o.map((_,j)=>a.c.includes(j));break;}}
+function settle(a,ok){
+ S.done=true;S.sel=null;
+ const r=ok?(S.attempt===1?'olive':'house'):'miss';G.res[G.i]=r;
+ if(!ok&&NEEDS_CHECK(a.type))solve(a);
+ drawBody();drawSeg();updateVillage();
+ if(r==='olive'){snd(G.res.filter(x=>x!=='miss').length===10?'win':'olive');dropMood('hop');feedback('ok','✔ ممتاز من المحاولة الأولى! أُزيلت خيمة وبُني مكانها بيت، وسقطت حبة زيتون على الكوفية 🫒');}
+ else if(r==='house'){snd('ok');dropMood('hop');feedback('ok','✔ أحسنتم! استفدتم من التلميح وصحّحتم إجابتكم، فبُني بيت مكان خيمة 🏠');}
+ else{snd('no');dropMood('sad');feedback('no',`✘ لم تكتمل الإجابة هذه المرة، فبقيت الخيمة ⛺. ${a.type==='mcq'||a.type==='exp'?`الإجابة الصحيحة هي (${LET[a.c]}): ${a.o[a.c]}.`:'الحلّ الصحيح معروض أعلاه باللون الأخضر.'} راجعوه معاً قبل أن ننتقل.`);}
+ $('#fact').hidden=false;const n=$('#nextBtn');n.hidden=false;n.focus({preventScroll:true});
+}
+function firstMiss(a,extra){
+ S.attempt=2;snd('try');dropMood('sad');
+ const c=clipOf(G.i);
+ feedback('try',`ليس بعد… لديكم محاولة ثانية. ${extra}<br><b class="h">💡 تلميح:</b> ${a.hint}${c?`<br><button class="clipbtn" data-x="clip" data-s="${c[0]}" data-e="${c[1]}" data-n="${esc(c[2])}">🎬 شاهدوا مقطع «${esc(c[2])}» من الفيديو (${mmss(c[0])}–${mmss(c[1])})</button>`:''}`);
+}
+function check(){
+ const a=ACTS[G.i];if(S.done||!ready(a))return;
+ const {ok,wrong,extra}=evaluate(a);
+ if(ok){settle(a,true);return;}
+ if(S.attempt===1){S.wrong=wrong;firstMiss(a,extra);drawBody();}
+ else settle(a,false);
+}
+function pickOpt(j){
+ const a=ACTS[G.i];if(S.done||S.dis.includes(j))return;
+ S.pick=j;
+ if(j===a.c){settle(a,true);return;}
+ if(S.attempt===1){S.dis.push(j);firstMiss(a,'');drawBody();}
+ else settle(a,false);
+}
+function runExp(){
+ if(S.running)return;S.running=true;drawBody();
+ const m=dryMin(S.heat,S.wind),dur=REDUCE?0:Math.max(700,m*30);
+ const wets=[...document.querySelectorAll('#abody .wet')],vap=$('#vap');
+ const fin=()=>{S.trials.push({h:S.heat,w:S.wind,m});S.running=false;drawBody();};
+ if(!dur||!wets[0].animate){fin();return;}
+ wets.forEach(w=>w.animate([{opacity:.45},{opacity:0}],{duration:dur,fill:'forwards'}));
+ vap.animate([{opacity:0,transform:'translateY(6px)'},{opacity:.9,transform:'translateY(-4px)'},{opacity:0,transform:'translateY(-14px)'}],{duration:Math.min(dur,1400),iterations:Math.ceil(dur/1400)});
+ setTimeout(fin,dur);
+}
+
+/* ---------- interactions ---------- */
+function act(x,i,v){
+ const a=ACTS[G.i]||{};
+ const clr=k=>S&&S.wrong.delete(k);
+ switch(x){
+  case 'start':{const iv=$('#introVid');if(iv)iv.pause();}G.team=($('#teamname').value||'').trim()||'فريق الصف الرابع';G.i=0;G.res=[];updateVillage();renderAct();P().scrollIntoView({block:'start',behavior:REDUCE?'auto':'smooth'});return;
+  case 'restart':G.i=-1;G.res=[];updateVillage();renderIntro();return;
+  case 'mute':muted=!muted;$('#mute').textContent=muted?'🔇':'🔊';$('#mute').setAttribute('aria-pressed',muted);$('#mute').setAttribute('aria-label',muted?'تشغيل الصوت':'كتم الصوت');return;
+  case 'next':closeClip();G.i++;if(G.i>=ACTS.length)renderEnd();else renderAct();P().scrollIntoView({block:'start',behavior:REDUCE?'auto':'smooth'});return;
+  case 'starter':{const t=$('#exitTxt');t.value=(t.value?t.value+' ':'')+v;t.focus();return;}
+ }
+ if(!S||S.done)return;
+ switch(x){
+  case 'check':check();return;
+  case 'opt':pickOpt(i);return;
+  case 'heat':S.heat=i;break;
+  case 'wind':S.wind=i;break;
+  case 'run':runExp();return;
+  case 'reset':newSKeep(a);break;
+  case 'tf':S.ans[i]=v==='1';clr(i);break;
+  case 'ord':S.seq.push(i);S.wrong.clear();break;
+  case 'unord':S.seq.splice(i,1);S.wrong.clear();break;
+  case 'sitem':S.sel=S.sel===i?null:i;break;
+  case 'sbin':if(S.sel!==null){S.place[S.sel]=i;clr(S.sel);S.sel=null;}break;
+  case 'lword':S.sel=S.sel===i?null:i;break;
+  case 'lslot':if(S.sel!==null){S.place[i]=S.sel;S.sel=null;}else if(S.place[i]!==null)S.place[i]=null;clr(i);break;
+  case 'fword':{const b=S.fill.indexOf(null);if(b>=0){S.fill[b]=i;clr(b);}break;}
+  case 'fblank':S.fill[i]=null;clr(i);break;
+  case 'ml':if(S.pair[i]!==null&&S.sel!==i){S.pair[i]=null;clr(i);S.sel=i;}else S.sel=S.sel===i?null:i;break;
+  case 'mr':if(S.sel!==null){S.pair=S.pair.map(p=>p===i?null:p);S.pair[S.sel]=i;clr(S.sel);S.sel=null;}break;
+  case 'mul':S.on[i]=!S.on[i];clr(i);break;
+ }
+ drawBody();
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeClip();});
+$('#clipVid').addEventListener('timeupdate',e=>{if(clipEnd!==null&&e.target.currentTime>=clipEnd){e.target.pause();clipEnd=null;}});
+function newSKeep(a){const at=S.attempt;newS(a);S.attempt=at;}
+document.addEventListener('click',e=>{if(e.target.id==='vmodal'){closeClip();return;}const t=e.target.closest('[data-x]');if(!t||t.disabled)return;if(!t.closest('#v-good'))return;
+ if(t.dataset.x==='seek'){const v=$('#introVid');if(v){try{v.currentTime=+t.dataset.t;}catch(_){}v.play().catch(()=>{});}return;}
+ if(t.dataset.x==='clip'){openClip(+t.dataset.s,+t.dataset.e,t.dataset.n);return;}
+ if(t.dataset.x==='vclose'){closeClip();return;}act(t.dataset.x,t.dataset.i!==undefined?+t.dataset.i:null,t.dataset.v);});
+
+/* ---------- intro & end ---------- */
+function renderIntro(){
+ P().innerHTML=`<div class="droprow"><div class="drop">${DROP}</div><p class="bubble">مرحباً! أنا «قطّورة». سأحكي لكم رحلتي من البحر إلى الغيمة، ثم إلى شجرة الزيتون، ثم إلى البحر من جديد. ساعدوني في عشر محطّات، وسنبني معاً قرية كاملة!</p></div>
+ ${videoBlock('🎬 شاهدوا «رحلة قطّورة» معاً قبل أن نبدأ (دقيقة و١٥ ثانية). يمكنكم القفز إلى أيّ مرحلة من الأزرار.')}
+ <h3 class="t" style="margin-top:12px">كيف نلعب؟</h3>
+ <ol class="steps">
+ <li><b>الصف كله فريق واحد.</b> تتشاورون معاً، وتنفّذ المعلّمة أو أحد الطلاب الإجابة على الشاشة.</li>
+ <li><b>عشرة أنشطة مختلفة:</b> تجربة، تصنيف، توصيل، ترتيب، تسمية مخطط وغيرها.</li>
+ <li><b>كل نشاط تحلّونه يبني بيتاً</b> مكان خيمة. وإذا حللتموه من المحاولة الأولى <b>تسقط حبة زيتون</b> على الكوفية.</li>
+ <li><b>إذا أخطأتم</b> تحصلون على تلميح ومحاولة ثانية.</li>
+ </ol>
+ <div class="namebox"><label for="teamname">اسم فريقكم:</label><input id="teamname" type="text" maxlength="24" placeholder="فريق الصف الرابع" value="${esc(G.team)}"></div>
+ <p class="inst">تذكّروا مراحل دورة المياه قبل أن نبدأ:</p>
+ ${diagram('all')}
+ <div class="center"><button class="btn" data-x="start">ابدؤوا الرحلة 💧</button></div>`;
+}
+function renderEnd(){
+ snd('win');
+ const h=G.res.filter(r=>r!=='miss').length,o=G.res.filter(r=>r==='olive').length;
+ const msg=h===10?'بنيتم القرية كاملة ورفرف العلم فوقها! 🇵🇸':h>=7?'قرية جميلة! بقيت خيام قليلة يمكن أن نبنيها بعد المراجعة.':h>=4?'بداية طيبة. لنراجع المحطّات التي بقيت فيها خيام، ثم نحاول من جديد.':'رحلة قطّورة تحتاج مراجعة معاً. كل محاولة جديدة تقرّبنا من بناء القرية.';
+ const st={};ACTS.forEach((a,k)=>{const s=a.stage;st[s]=st[s]||{n:0,m:0};st[s].n++;if(G.res[k]==='miss')st[s].m++;});
+ const R={olive:'🫒 من المحاولة الأولى',house:'🏠 بعد التلميح',miss:'⛺ يحتاج مراجعة'};
+ P().innerHTML=`<div class="center"><div class="drop" style="margin:0 auto;width:64px">${DROP}</div><h3 class="t" style="margin-top:6px">انتهت رحلة قطّورة!</h3>
+ <p style="font-weight:800;margin:0 0 6px">${esc(G.team)}: ${toAr(h)} بيوت من ١٠، و${toAr(o)} حبات زيتون على الكوفية.</p><p style="font-weight:700;color:var(--muted);margin:0">${msg}</p></div>
+ <h3 class="t" style="font-size:19px;margin-top:16px">تقرير المعلّمة</h3>
+ <div class="stages">${Object.keys(st).map(s=>`<span class="${st[s].m?'rev':'okk'}">${STAGE[s]}: ${st[s].m?'يحتاج مراجعة':'متقَن'}</span>`).join('')}</div>
+ <div class="tblwrap"><table class="rep"><thead><tr><th>#</th><th>المحطّة</th><th>نوع النشاط</th><th>النتيجة</th></tr></thead><tbody>${ACTS.map((a,k)=>`<tr><td>${toAr(k+1)}</td><td>${a.tag}</td><td>${TYPE[a.type]}</td><td>${R[G.res[k]]}</td></tr>`).join('')}</tbody></table></div>
+ <p class="inst" style="margin-top:12px">قبل أن تكتبوا، يمكنكم مشاهدة الرحلة من جديد:</p>${videoBlock('🎬 «رحلة قطّورة»: راجعوا خاصةً المراحل التي بقيت فيها خيام.')}
+ <div class="exit"><h3 class="t" style="font-size:19px">بطاقة الخروج ✍️</h3><p class="inst">اكتبوا بكلماتكم: كيف تصل قطّورة من البحر إلى شجرة الزيتون؟ يمكنكم البدء بإحدى العبارات:</p>
+ <div class="starters"><button data-x="starter" data-v="سخّنت الشمس ماء البحر فـ">سخّنت الشمس…</button><button data-x="starter" data-v="ثم صعد البخار إلى الجو البارد فـ">ثم صعد البخار…</button><button data-x="starter" data-v="وعندما ثقلت القطرات في الغيمة">وعندما ثقلت القطرات…</button><button data-x="starter" data-v="فشربت جذور شجرة الزيتون">فشربت الجذور…</button></div>
+ <textarea id="exitTxt" aria-label="بطاقة الخروج"></textarea></div>
+ <div class="center" style="margin-top:12px"><button class="btn" data-x="restart">إعادة الرحلة 🔄</button></div>`;
+}
+
+/* ================= STUDY DATA ================= */
+const DOMS=['التصميم التعليمي','الحِمل المعرفي والوسائط المتعددة','التغذية الراجعة والتقويم','الدافعية والانخراط','التصميم البصري وإمكانية الوصول','قابلية الاستخدام والتحكّم'];
+const CRIT=[
+[0,'وضوح الأهداف والتعليمات','Gagné et al., 2005; Nielsen, 1994 (H10)',
+ 'شاشة بداية تشرح طريقة اللعب في أربع خطوات، ومفتاح يوضّح معنى 🏠 و🫒 و⛺، ومراجعة لمخطط الدورة قبل أول نشاط. وهذا يحقّق حدثَي «إعلام المتعلّم بالهدف» و«استدعاء التعلّم السابق» عند جانييه.',
+ 'لا هدف معلن ولا تعليمات. تبدأ الصفحة بعشرة أزرار ملوّنة ثم الأسئلة مباشرة، فيُترك الطالب ليخمّن ما المطلوب منه.',
+ 'وضوح الهدف يوجّه الانتباه إلى ما هو مهمّ، ويختصر الوقت الذي يضيع في فهم الواجهة بدل فهم المحتوى.',4,1],
+[0,'تنوّع الأنشطة ومستويات التفكير','Anderson & Krathwohl, 2001',
+ 'عشرة أنشطة بتسعة أنماط: تجربة محاكاة، صح أم خطأ، تسمية مخطط، تصنيف، إكمال فراغ، توصيل، ترتيب، اختيار متعدد، واختيار من متعدد. تغطي التذكّر والفهم والتطبيق والتحليل والتقويم، وتضاف إليها بطاقة خروج كتابية.',
+ 'عشرة أسئلة كلها اختيار من متعدد بصياغة مختصرة، معظمها في مستوى التذكّر.',
+ 'تنوّع المهام يرفع مستوى المعالجة الذهنية، ويكشف الفهم الحقيقي بدل الحفظ، ويقلّل أثر التخمين الذي يبلغ ٢٥٪ في السؤال رباعي البدائل.',4,1],
+[0,'الربط بالسياق والخبرة السابقة','CAST, 2018 (Checkpoint 3.1); Malone, 1981',
+ 'تُروى الرحلة على لسان «قطّورة» من بحر غزة، وترتبط الأنشطة بمواقف مألوفة: غسيل أمّي على السطح، ندى ورق الزيتون، ثلج الخليل، نبع الفوّار، عين السلطان، آبار جمع المطر، والعونة في موسم القطاف.',
+ 'الخيمة والزيتون يظهران في العنوان والأزرار فقط. المكافأة منفصلة عن المحتوى، والأسئلة خالية من أيّ سياق.',
+ 'ربط المفهوم بخبرة يومية يبني تمثيلاً ذهنياً أعمق، ويسهّل الاسترجاع والنقل إلى مواقف جديدة.',4,1],
+[0,'التعلّم بالاستقصاء والتجريب','de Jong & van Joolingen, 1998',
+ 'محاكاة لتجفيف الغسيل يغيّر فيها الطلاب حرارة الشمس والرياح، ويُسجَّل كل تجربة في جدول. ولا تُفتح الإجابة إلا بعد تجربتين بظروف مختلفة، فيُبنى الاستنتاج على الملاحظة.',
+ 'لا تجريب ولا ملاحظة. المعرفة تُقدَّم أسئلة جاهزة للحفظ.',
+ 'ضبط المتغيّرات وملاحظة أثرها يبني مهارات التفكير العلمي، والجدول يدعم الاستقصاء فلا يصبح عشوائياً. لكن المحاكاة لا تُلزم الطالب بتغيير متغيّر واحد في كل مرة، ولهذا الدرجة ٣.',3,1],
+[1,'مبدأ التجزئة','Mayer, 2021',
+ 'نشاط واحد في كل شاشة، مع شريط تقدّم من عشر خانات ملوّنة حسب النتيجة، والانتقال بيد الفريق عبر زر «النشاط التالي».',
+ 'الأسئلة العشرة وبطاقة الكتابة في صفحة طويلة واحدة، بلا مؤشر تقدّم.',
+ 'تقسيم المحتوى إلى وحدات يتحكّم المتعلّم في سرعتها يمنع إغراق الذاكرة العاملة، ويناسب المتعلّمين الصغار خاصة.',4,1],
+[1,'مبدأ الاتساق وحذف المشتّتات','Mayer, 2021; Sweller, 1988',
+ 'كل عنصر بصري يخدم الهدف: القرية تعرض التقدّم، والمخطط يعرض الدورة، و«قطّورة» تروي القصة. الخلفية هادئة، والحركة لا تظهر إلا استجابة لإجابة.',
+ 'NSHAPES شكلاً ورمزاً ملوّناً خلف النص، وNFAKE زراً لا وظيفة لها سوى إصدار صوت، ونتيجة فيها «رقم عشوائي» و«عدد النقرات».',
+ 'المشتّتات تستهلك الذاكرة العاملة في معالجة لا علاقة لها بالتعلّم (حِمل دخيل)، فيقلّ ما يتبقّى لفهم المفهوم.',4,1],
+[1,'مبدأ الإشارة البصرية','Mayer, 2021',
+ 'مخطط الدورة يُبرز باللون المرحلة التي يسأل عنها النشاط ويخفّف غيرها، وكل شاشة تحمل شارة المرحلة وشارة نوع النشاط.',
+ 'لا مخطط ولا إبراز. كل الأسئلة بالشكل نفسه، فلا يعرف الطالب أيّ مرحلة يراجع.',
+ 'توجيه الانتباه إلى العنصر الأساسي يساعد المتعلّم على تنظيم المعرفة في بنية مترابطة من مراحل متتابعة.',4,1],
+[1,'توظيف الفيديو التعليمي','Mayer, 2021 (pre-training, segmenting, modality)',
+ 'فيديو «رحلة قطّورة» (٧٥ ثانية) بتعليق صوتي ونصّ مكتوب على الشاشة. يُعرض تمهيداً قبل الأنشطة ليتعرّف الطلاب أسماء المراحل أولاً (مبدأ التدريب المسبق)، وهو مقسّم إلى ستة فصول يمكن القفز إليها (مبدأ التجزئة وتحكّم المتعلّم). وعند الخطأ الأول يظهر زرّ يعرض مقطع المرحلة نفسها فقط، فيصبح الفيديو سقالة داخل النشاط لا عرضاً منفصلاً عنه. أما المخطط الثابت فيبقى داخل الأنشطة، لأن الفيديو معلومة عابرة لا تصلح للرجوع إليها أثناء الحلّ.',
+ 'لا فيديو ولا أيّ تمثيل مرئي لدورة المياه؛ النصّ المكتوب وحده يحمل المحتوى.',
+ 'الصورة المتحرّكة مع السرد الصوتي تستثمر القناتين البصرية والسمعية معاً (مبدأ الوسيلة)، وتُظهر التحوّل بين المراحل الذي يصعب على رسمة ثابتة إظهاره. وتقطيعه إلى مقاطع قصيرة يحدّ من ضياع المعلومة العابرة.',4,1],
+[2,'فورية التغذية الراجعة','Shute, 2008',
+ 'تظهر النتيجة فور الإجابة: الصحيح بالأخضر مع ✔ والخطأ بالأحمر مع ✘، ولكلٍّ منهما نغمة مختلفة.',
+ 'لا يحدث شيء بعد الاختيار سوى نغمة واحدة ثابتة، والعلامة لا تظهر إلا في النهاية.',
+ 'التغذية الراجعة الفورية تمنع ترسيخ الفهم الخاطئ، وهي الأنسب للمتعلّمين الصغار وللمفاهيم الجديدة.',4,1],
+[2,'التغذية الراجعة التفصيلية','Hattie & Timperley, 2007',
+ 'الرسالة تحدّد ما أصاب الطالب فيه وما أخطأ (مثل «في مكانها الصحيح ٢ من ٤») وتعلّم العنصر الخاطئ. والمعلومة الإثرائية تشرح السبب، وشريط التقدّم يجيب عن سؤال «إلى أين أنا ذاهب؟».',
+ 'علامة رقمية مثل «٦٠ / ١٠٠» دون بيان السؤال الخاطئ أو الإجابة الصحيحة.',
+ 'التغذية الراجعة التي تشرح «لماذا» و«ماذا بعد» أقوى أثراً بكثير من مجرّد إعلان الصواب والخطأ.',4,1],
+[2,'السقالات والمحاولة الثانية','Wood, Bruner & Ross, 1976',
+ 'عند الخطأ الأول يحصل الفريق على تلميح موجّه ومحاولة ثانية مع الإبقاء على الإجابات الصحيحة. وعند الخطأ الثاني يُعرض الحلّ كاملاً مع تفسير كل جزء.',
+ 'محاولة واحدة غير معلنة، بلا تلميح ولا عرض للحلّ.',
+ 'الدعم المتدرّج يُبقي المهمّة في متناول المتعلّم، ويحوّل الخطأ إلى فرصة تعلّم بدل أن يكون حكماً نهائياً.',4,1],
+[2,'التقويم التكويني ودعم قرار المعلّمة','Black & Wiliam, 1998',
+ 'يميّز النشاط بين الإتقان من المحاولة الأولى (🫒) والنجاح بعد تلميح (🏠) والحاجة إلى مراجعة (⛺)، ويعرض في النهاية تقريراً لكل نشاط ومرحلة، ثم بطاقة خروج كتابية.',
+ 'لا شيء يدلّ المعلّمة على المواضع التي يحتاج فيها الصف إلى مراجعة، والأرقام العشوائية تضلّلها.',
+ 'المعلومة التكوينية تمكّن المعلّمة من تعديل تدريسها في الحصّة نفسها. لكن التقرير لا يُحفظ بعد إغلاق الصفحة، ولهذا الدرجة ٣.',3,1],
+[3,'الانتباه والصلة (ARCS)','Keller, 2010; Malone, 1981',
+ 'قصّة «قطّورة» وتحوّل الخيام إلى بيوت وقطف الزيتون على الكوفية تقدّم خيالاً مرتبطاً بالمحتوى والتراث، فالمكافأة جزء من قصة التعلّم.',
+ 'الإثارة مصطنعة: ألوان فاقعة وأصوات وأشكال تدور. هي تجذب الانتباه فعلاً، لكنها تجذبه بعيداً عن التعلّم.',
+ 'الخيال المرتبط بالمحتوى يعزّز الدافعية الداخلية أكثر من الإثارة الخارجية المنفصلة عنه.',4,2],
+[3,'الثقة والرضا ولغة التحفيز','Keller, 2010; Dweck, 2006',
+ 'لغة تمدح الجهد والاستراتيجية («استفدتم من التلميح وصحّحتم إجابتكم»)، ورسالة الختام تدعو إلى المراجعة دون وصم.',
+ 'عبارة «أنت طالب سيء 😠» عند علامة أقل من ٥٠.',
+ 'الحكم على الشخص بدل الحكم على الأداء يُضعف الثقة، ويعزّز «العقلية الثابتة» التي تدفع الطالب إلى تجنّب التحدّي.',4,1],
+[3,'الكفاءة والانتماء والاستقلالية','Ryan & Deci, 2000',
+ 'فريق واحد يمثّل الصف كله وهدف مشترك (بناء القرية)، فلا منافسة بين الزملاء. التقدّم المرئي يعزّز الشعور بالكفاءة، والطلاب يختارون اسم فريقهم.',
+ 'نشاط فردي مع «ترتيبك: ٧٣٤ من ٩٩٩»، وهو رقم وهمي يولّد مقارنة اجتماعية بلا أساس.',
+ 'العمل نحو هدف جماعي يخفّف قلق الفشل لدى الطلاب الأضعف ويزيد التعاون. لكن ترتيب الأنشطة ثابت ولا يتيح خياراً للطلاب، ولهذا الدرجة ٣.',3,1],
+[3,'معنى المكافأة','Malone, 1981; Ryan & Deci, 2000',
+ 'المكافأة تمثيل مباشر للتعلّم: عدد البيوت يساوي الأنشطة المحلولة، وعدد الزيتونات يساوي الإتقان من المحاولة الأولى. وعند اكتمال القرية يرتفع العلم.',
+ '«الزيتونات» و«المستوى» و«الترتيب» تُولَّد عشوائياً في كل مرة ولا علاقة لها بالأداء.',
+ 'المكافأة العشوائية تعلّم الطالب أن النتيجة لا ترتبط بالجهد، فتفقد قيمتها التحفيزية والمعلوماتية معاً.',4,1],
+[4,'التباين ومقروئية النص','W3C, 2023 (SC 1.4.3)',
+ 'نص داكن على خلفية فاتحة بنسبة تباين ١٧٫٢:١ للنص الرئيس و٧٫٦:١ للنص الثانوي، ونص أبيض على الأزرار الخضراء بنسبة ٥٫٥:١. خطّان عربيان متناسقان (Lalezar للعناوين وCairo للنص) بأحجام متدرّجة، ووضع ليلي مدروس.',
+ 'عنوان أزرق فاتح على أزرق فاتح بنسبة ١٫٤:١، وزر «إنهاء» رمادي على رمادي ١٫٧:١، وخيارات بخطّ ١١ بكسل وتباين ٣٫٤:١ (الحدّ الأدنى ٤٫٥:١)، وخطوط مختلطة بين سطر وآخر.',
+ 'ضعف التباين يُقصي ضعاف البصر، ويُتعب الجميع عند العرض على جهاز عرض في صفّ مضاء.',4,1],
+[4,'الحركة والوميض','W3C, 2023 (SC 2.2.2, 2.3.3)',
+ 'الحركة قصيرة وتأتي استجابة لفعل الطالب (بناء بيت، سقوط زيتونة، تبخّر في التجربة)، وتتوقّف كلياً إذا فعّل المستخدم «تقليل الحركة».',
+ 'أشكال تدور بلا توقّف خلف النص طوال النشاط، ولا وسيلة لإيقافها.',
+ 'الحركة المستمرة تشتّت الانتباه، وقد تزعج الطلاب ذوي اضطراب الانتباه أو الحساسية البصرية.',4,1],
+[4,'حجم أهداف اللمس والتباعد','W3C, 2023 (SC 2.5.8)',
+ 'أزرار الخيارات والبطاقات بارتفاع ٤٤ إلى ٥٠ بكسل وبفواصل واضحة، فتناسب اللمس على السبورة التفاعلية أو الجهاز اللوحي.',
+ 'أزرار راديو صغيرة (نحو ١٣ بكسل) متلاصقة وبخط صغير.',
+ 'الأهداف الصغيرة تزيد أخطاء النقر، فيُحسب على الطالب خطأ لم يقصده.',4,1],
+[5,'وضوح الحالة ووظيفية الأزرار','Nielsen, 1994 (H1, H4, H8)',
+ 'كل زر يقول ما يفعله ويفعله: «ابدؤوا الرحلة»، «تحقّقوا من الإجابة»، «النشاط التالي». وزر التحقّق يبقى معطّلاً حتى تكتمل الإجابة.',
+ 'NFAKE زراً منها «التالي» و«حفظ» و«مساعدة» و«طباعة الشهادة» لا تفعل شيئاً، وبعضها مكرّر بأسماء متناقضة («التالي ◀» و«التالي ➡»).',
+ 'الأزرار الوهمية تهدم ثقة المستخدم بالواجهة، وتستهلك وقت الحصّة في التجريب العشوائي.',4,1],
+[5,'التحكّم في الوقت والتراجع','W3C, 2023 (SC 2.2.1); Nielsen, 1994 (H3)',
+ 'لا مؤقت، فيتشاور الفريق بهدوء. ويمكن مسح الإجابة أو إرجاع أيّ بطاقة قبل التحقّق، ويوجد زرّ لكتم الصوت.',
+ 'مؤقت غير مشروح (٥ دقائق) يُنهي الاختبار فجأة ويحسب الأسئلة غير المُجابة خطأ، بلا إيقاف ولا تمديد.',
+ 'الضغط الزمني غير المبرّر يرفع القلق، ويجعل النشاط يقيس السرعة بدل الفهم.',4,1]
+];
+const BLOOMS=['تذكّر','فهم','تطبيق','تحليل','تقويم','إنشاء'];
+const BAD_BLOOM={'تذكّر':6,'فهم':4};
+function buildStudy(){
+ const fr=document.createElement('template');fr.innerHTML=$('#tpl-bad').innerHTML;
+ const nFake=fr.content.querySelectorAll('.fake button').length+2, nShapes=40;
+ $('#nShapes').textContent=toAr(nShapes);$('#nFake').textContent=toAr(nFake);
+ let html='';
+ DOMS.forEach((d,di)=>{const cs=CRIT.map((c,k)=>[c,k]).filter(([c])=>c[0]===di);
+  html+=`<div class="domain"><h4>${d}<small>${toAr(cs.length)} معايير</small></h4>`+cs.map(([c,k])=>`<div class="crit"><header><b>${toAr(k+1)}. ${c[1]}</b><span class="ref">${esc(c[2])}</span><span class="sc"><span class="sg">الجيد ${toAr(c[6])}/٤</span><span class="sb">السيئ ${toAr(c[7])}/٤</span></span></header>
+  <div class="cols"><div class="g"><i>✅ التصميم الجيد</i>${c[3]}</div><div class="b"><i>❌ التصميم السيئ</i>${c[4].replace('NSHAPES',toAr(nShapes)).replace('NFAKE',toAr(nFake))}</div></div>
+  <div class="imp"><b>الأثر في التعلّم:</b> ${c[5]}</div></div>`).join('')+`</div>`;});
+ $('#critList').innerHTML=html;
+ const tg=CRIT.reduce((s,c)=>s+c[6],0),tb=CRIT.reduce((s,c)=>s+c[7],0),max=CRIT.length*4;
+ const pct=v=>toAr(Math.round(v/max*100))+'٪';
+ $('#absG').textContent=pct(tg);$('#absB').textContent=pct(tb);
+ $('#totals').innerHTML=`<div class="g"><span>التصميم الجيد</span><b>${toAr(tg)} / ${toAr(max)}</b><span>${pct(tg)} من الدرجة الكلية</span></div><div class="b"><span>التصميم السيئ</span><b>${toAr(tb)} / ${toAr(max)}</b><span>${pct(tb)} من الدرجة الكلية</span></div><div><span>الفرق</span><b>${toAr(tg-tb)}</b><span>درجة لصالح التصميم الجيد</span></div>`;
+ const f1=v=>toAr(v.toFixed(2).replace(/\.?0+$/,'')).replace('.','٫');
+ $('#bars').innerHTML=DOMS.map((d,di)=>{const cs=CRIT.filter(c=>c[0]===di),g=cs.reduce((s,c)=>s+c[6],0)/cs.length,b=cs.reduce((s,c)=>s+c[7],0)/cs.length;
+  return `<div class="bar-row"><span class="lb">${d}</span><div class="track"><div class="bar bg_" style="width:${g/4*100}%">${f1(g)}</div><div class="bar bb_" style="width:${b/4*100}%">${f1(b)}</div></div></div>`;}).join('');
+ $('#scoreTbl').innerHTML=`<thead><tr><th>#</th><th>المعيار</th><th>المجال</th><th>الجيد</th><th>السيئ</th></tr></thead><tbody>${CRIT.map((c,k)=>`<tr><td class="num">${toAr(k+1)}</td><td>${c[1]}</td><td>${DOMS[c[0]]}</td><td class="num">${toAr(c[6])}</td><td class="num">${toAr(c[7])}</td></tr>`).join('')}<tr><th colspan="3">المجموع</th><th class="num">${toAr(tg)}</th><th class="num">${toAr(tb)}</th></tr></tbody>`;
+ $('#bloomTbl').innerHTML=`<thead><tr><th>#</th><th>النشاط</th><th>نمط التفاعل</th><th>المستوى المعرفي</th><th>الدليل</th></tr></thead><tbody>${ACTS.map((a,k)=>`<tr><td class="num">${toAr(k+1)}</td><td>${a.tag}</td><td>${TYPE[a.type]}</td><td><b>${a.bloom}</b></td><td>${BLOOM_WHY[k]}</td></tr>`).join('')}<tr><td class="num">+</td><td>✍️ بطاقة الخروج</td><td>كتابة حرّة (غير محسوبة)</td><td><b>إنشاء</b></td><td>يصوغ الطالب رحلة قطّورة بكلماته.</td></tr></tbody>`;
+ const gd={};BLOOMS.forEach(b=>gd[b]=0);ACTS.forEach(a=>gd[a.bloom]++);gd['إنشاء']=1;
+ $('#bloomDist').innerHTML=`<thead><tr><th>المستوى</th>${BLOOMS.map(b=>`<th>${b}</th>`).join('')}<th>عدد المستويات</th></tr></thead><tbody><tr><td><b>التصميم الجيد</b></td>${BLOOMS.map(b=>`<td class="num">${toAr(gd[b])}</td>`).join('')}<td class="num">${toAr(BLOOMS.filter(b=>gd[b]).length)}</td></tr><tr><td><b>التصميم السيئ</b></td>${BLOOMS.map(b=>`<td class="num">${toAr(BAD_BLOOM[b]||0)}</td>`).join('')}<td class="num">${toAr(Object.keys(BAD_BLOOM).length)}</td></tr></tbody>`;
+}
+const BLOOM_WHY=['استرجاع معلومة مباشرة.','يغيّر المتغيّرات ويقارن النتائج ليستنتج العلاقة.','يفسّر ظاهرة يومية بمفهوم التكاثف.','يميّز الفهم الصحيح من الفهم الخاطئ الشائع.','يسترجع أسماء المراحل ويضعها في مواضعها.','يصنّف أمثلة جديدة حسب خصائص كل حالة.','يكمل نصّاً تفسيرياً ويستبعد كلمات مشتّتة.','ينقل المفاهيم إلى سياق جديد (شجرة الزيتون) ويضيف النتح.','يعيد بناء تسلسل سببي للمراحل.','يحكم على سلوكيات ويربطها بالتبخّر.'];
+
+/* ================= ROUTING ================= */
+const VIEWS=['home','good','bad','study'];
+let badLoaded=false;
+function show(v){
+ if(!VIEWS.includes(v))v='home';
+ document.querySelectorAll('video').forEach(x=>x.pause());closeClip&&v!=='good'&&closeClip();
+ document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!=='v-'+v);
+ document.querySelectorAll('.tab').forEach(e=>e.classList.toggle('on',e.dataset.v===v));
+ if(v==='bad'&&!badLoaded){$('#f-bad').srcdoc='<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body>'+$('#tpl-bad').innerHTML+'</body></html>';badLoaded=true;}
+ $('#v-'+v).scrollTop=0;
+}
+function go(v){if(location.hash.slice(1)===v)show(v);else location.hash=v;}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>go(b.dataset.v));
+document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
+document.querySelectorAll('[data-sec]').forEach(b=>b.onclick=()=>document.getElementById(b.dataset.sec).scrollIntoView({behavior:REDUCE?'auto':'smooth',block:'start'}));
+window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
+
+buildVillage();updateVillage();renderIntro();buildStudy();
+show(location.hash.slice(1)||'home');
+</script>
+
+</body>
+</html>
